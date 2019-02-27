@@ -9,6 +9,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "System.Object", "Capitolo 4
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Capitolo 4", "Capitolo 4", "{6079DD12-E2B7-4727-B5F6-A50420B55E74}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Capitolo 5", "Capitolo 5", "{306A279B-DA44-4781-9E82-4170BD569C32}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Capitolo 6", "Capitolo 6", "{B24417C9-9E9F-4E12-864F-3477C059BD3F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Switch", "Capitolo 6\Switch\Switch.csproj", "{F75A18A6-377F-45D8-9537-4FDE4CFFEFB6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,12 +29,17 @@ Global
 		{8BDD1635-5494-4790-9755-A2BE5751FD0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8BDD1635-5494-4790-9755-A2BE5751FD0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8BDD1635-5494-4790-9755-A2BE5751FD0E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F75A18A6-377F-45D8-9537-4FDE4CFFEFB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F75A18A6-377F-45D8-9537-4FDE4CFFEFB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F75A18A6-377F-45D8-9537-4FDE4CFFEFB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F75A18A6-377F-45D8-9537-4FDE4CFFEFB6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{8BDD1635-5494-4790-9755-A2BE5751FD0E} = {6079DD12-E2B7-4727-B5F6-A50420B55E74}
+		{F75A18A6-377F-45D8-9537-4FDE4CFFEFB6} = {B24417C9-9E9F-4E12-864F-3477C059BD3F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {132800A9-22C3-4E68-8C0B-523E7FDC6BE7}
