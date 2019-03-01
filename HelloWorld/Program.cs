@@ -18,8 +18,6 @@ namespace HelloWorld
             Console.WriteLine($"{a[i1]}, {a[i2]}"); // "3, 6"
 
             Console.Read();
-
-            int numero = 0b_1_000_000;
         }
     }
 }
