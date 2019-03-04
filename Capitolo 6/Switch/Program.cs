@@ -50,6 +50,42 @@ namespace Switch
                 "ita" => "Ciao",
                 _ => "???"
             };
+
+            Quadrato q=new Quadrato();
+            q.Lato=5;
+            Cerchio cerchio=new Cerchio();
+            cerch.Raggio=4;
+
+           
+            var areaQuadrato=CalcArea1(q);
+            Console.WriteLine($"area quadrato {areaQuadrato}");
+        }
+
+        public static double CalcArea1(object obj)
+        {
+            switch(obj)
+            {
+                case Quadrato { Lato: 0 }:
+                    return 0;               
+                case Quadrato q:
+                    return q.Lato * q.Lato;
+                case Cerchio c:
+                    return Math.PI * Math.PI * c.Raggio;
+
+                default:
+                    throw new NotImplementedException();
+            };
+        }
+
+        public static double CalcArea(object obj)
+        {
+            return obj switch
+            {
+                Quadrato { Lato: 0 } => 0,
+                Quadrato q => q.Lato * q.Lato,
+                Cerchio c => Math.PI * Math.PI * c.Raggio,
+                _ => throw new NotImplementedException()
+            };
         }
 
 
@@ -74,24 +110,12 @@ namespace Switch
             _ => "unknown"
         };
 
-
         static string Display(Customer o) => o switch
         {
             { Telefono: null, DataNascita: var d } c when d.Year==1975 => "nato il "+c.DataNascita,
             Customer { Sesso: 'm'} p => $"maschio",
             _ => "unknown"
         };
-
-        class Customer
-        {
-            public string Nome { get; set; }
-            public string Telefono { get; set; }
-
-            public DateTime DataNascita { get; set; }
-
-            public char Sesso { get; set; }          
-            
-        }
 
 
         class Figura
