@@ -70,15 +70,12 @@ namespace IsPatternMatching
             }
 
             var a = new { x = 1, y = 2, z = 3 }; //x=1, y=2, z=3
-            if (a is { x, y, z })
-            {
-            }
+
 
             Console.ReadLine();
         }
     }
 
-    class Point3D
 
     public class MyClass
     {

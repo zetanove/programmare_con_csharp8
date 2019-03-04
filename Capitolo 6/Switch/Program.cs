@@ -9,7 +9,49 @@ namespace Switch
         {
             Console.WriteLine("Hello World!");
             TestSwitchExpression();
+
+            var p1= Display(new Point());
+            var p2=Display(new Point(2,3));
+
+            string language = "ita";
+            string greeting = null;
+
+            switch(language)
+            {
+                case "eng":
+                    greeting = "Hello";
+                    break;
+                case "spa":
+                    greeting = "Hola";
+                    break;
+                case "ita":
+                    greeting = "Ciao";
+                    break;
+                default:
+                    greeting = "???";
+                    break;
+            }
+
+            greeting = language switch
+            {
+                "eng" => "Hello",
+                "spa" => "Hola",
+                "ita" => "Ciao",
+                _ => "???"
+            };
+
+            Console.WriteLine(greeting);
+
+            language = "deu";
+            greeting = language switch
+            {
+                "eng" => "Hello",
+                "spa" => "Hola",
+                "ita" => "Ciao",
+                _ => "???"
+            };
         }
+
 
         static void TestSwitchExpression()
         {
@@ -18,7 +60,7 @@ namespace Switch
             {
                
                 string s when s.StartsWith("a") =>0,
-                string { Length: 19 } => 1234,
+                string { Length: 10 } => 1234,
                 string s => s.Length,                
                 _ =>1
             };
@@ -31,5 +73,55 @@ namespace Switch
             Point { X: var x, Y: var y } p => $"({x}, {y})",
             _ => "unknown"
         };
+
+
+        static string Display(Customer o) => o switch
+        {
+            { Telefono: null, DataNascita: var d } c when d.Year==1975 => "nato il "+c.DataNascita,
+            Customer { Sesso: 'm'} p => $"maschio",
+            _ => "unknown"
+        };
+
+        class Customer
+        {
+            public string Nome { get; set; }
+            public string Telefono { get; set; }
+
+            public DateTime DataNascita { get; set; }
+
+            public char Sesso { get; set; }          
+            
+        }
+
+
+        class Figura
+        {
+            public double Area
+            {
+                get
+                {
+                    return this switch
+                    {
+                        Quadrato q when q.Lato < 0 => throw new ArgumentException(),
+                        Quadrato q when q.Lato > 0 => q.Lato * q.Lato,
+                        Cerchio c => c.Raggio * Math.PI * Math.PI,
+                        _ => throw new NotImplementedException()
+                    };
+                }
+            }
+
+            
+        }
+
+        class Quadrato: Figura
+        {
+            public double Lato { get; set; }
+        }
+
+        class Cerchio : Figura
+        {
+            public double Raggio { get; set; }
+        }
     }
+
 }
