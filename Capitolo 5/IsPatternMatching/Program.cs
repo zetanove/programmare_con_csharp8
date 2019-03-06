@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -60,6 +61,7 @@ namespace IsPatternMatching
             clienti[2] = new Customer() { Name = "caterina", Telephone = null };
             clienti[3] = new Customer() { Name = "matilda", Telephone = "456" };
 
+            //property pattern
             foreach(var c in clienti)
             {
                 if(c is Customer { Telephone: null, Name: string n})
@@ -67,6 +69,7 @@ namespace IsPatternMatching
                     Console.WriteLine($"Il cliente {n} non ha un numero di telefono");
                 }
             }
+            
 
             obj = new Customer() { Name = "Francy", Telephone = "347" };
             if(obj is Customer { Telephone: string tel} customer && tel.StartsWith("347"))
@@ -79,6 +82,9 @@ namespace IsPatternMatching
             {
                 Console.WriteLine(a.ToString());
             }
+
+            Point pt = new Point(3,4);
+            (int x, int y) = pt;
 
             Console.ReadLine();
         }

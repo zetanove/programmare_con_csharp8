@@ -25,6 +25,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Istruzione If", "Capitolo 6
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SwitchExpression", "Capitolo 6\SwitchExpression\SwitchExpression.csproj", "{5E11A775-3399-4EBE-BEDC-E4F7C6299DCA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeconstructPattern", "Capitolo 5\DeconstructPattern\DeconstructPattern.csproj", "{960F946F-C0E8-41A3-94ED-72DAECA47CBC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{5E11A775-3399-4EBE-BEDC-E4F7C6299DCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5E11A775-3399-4EBE-BEDC-E4F7C6299DCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5E11A775-3399-4EBE-BEDC-E4F7C6299DCA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{960F946F-C0E8-41A3-94ED-72DAECA47CBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{960F946F-C0E8-41A3-94ED-72DAECA47CBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{960F946F-C0E8-41A3-94ED-72DAECA47CBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{960F946F-C0E8-41A3-94ED-72DAECA47CBC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -75,6 +81,7 @@ Global
 		{BFA5BAFF-AC5F-4729-A9AE-73E40EB1C087} = {F37F279E-2609-4DC7-93C7-8481913CD911}
 		{0D9139C0-11DF-43C3-A8CC-93B70B86F237} = {F37F279E-2609-4DC7-93C7-8481913CD911}
 		{5E11A775-3399-4EBE-BEDC-E4F7C6299DCA} = {F37F279E-2609-4DC7-93C7-8481913CD911}
+		{960F946F-C0E8-41A3-94ED-72DAECA47CBC} = {8FC05C3D-2F6D-4257-8A7C-BB5F4ADDAAEB}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {132800A9-22C3-4E68-8C0B-523E7FDC6BE7}
