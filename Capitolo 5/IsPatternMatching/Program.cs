@@ -58,19 +58,27 @@ namespace IsPatternMatching
             clienti[0] = new Customer() { Name = "antonio", Telephone = null };
             clienti[1] = new Customer() { Name =  null, Telephone = null };
             clienti[2] = new Customer() { Name = "caterina", Telephone = null };
-            clienti[3] = new Customer() { Name = "francy", Telephone = "456" };
+            clienti[3] = new Customer() { Name = "matilda", Telephone = "456" };
 
-
-            foreach(var customer in clienti)
+            foreach(var c in clienti)
             {
-                if(customer is Customer { Telephone: null, Name: string n})
+                if(c is Customer { Telephone: null, Name: string n})
                 {
                     Console.WriteLine($"Il cliente {n} non ha un numero di telefono");
                 }
             }
 
+            obj = new Customer() { Name = "Francy", Telephone = "347" };
+            if(obj is Customer { Telephone: string tel} customer && tel.StartsWith("347"))
+            {
+                Console.WriteLine($"Nome: {customer.Name} Telefono: {tel}");
+            }
+            
             var a = new { x = 1, y = 2, z = 3 }; //x=1, y=2, z=3
-
+            if(a is { x: 1, y: _, z: 3})
+            {
+                Console.WriteLine(a.ToString());
+            }
 
             Console.ReadLine();
         }
