@@ -58,16 +58,28 @@ namespace IsPatternMatching
             clienti[0] = new Customer() { Name = "antonio", Telephone = null };
             clienti[1] = new Customer() { Name =  null, Telephone = null };
             clienti[2] = new Customer() { Name = "caterina", Telephone = null };
-            clienti[3] = new Customer() { Name = "francy", Telephone = "456" };
+            clienti[3] = new Customer() { Name = "matilda", Telephone = "456" };
 
 
-            foreach(var customer in clienti)
+            foreach(var cust in clienti)
             {
-                if(customer is Customer { Telephone: null, Name: string n})
+                if(cust is Customer { Telephone: null, Name: string n})
                 {
                     Console.WriteLine($"Il cliente {n} non ha un numero di telefono");
                 }
+                else
+                {
+                    Console.WriteLine($"{cust.Name} ha un bel nome!");
+                }
             }
+
+            object obj1 = new Customer() { Name = "Francy", Telephone = "347" };
+            
+            if (obj1 is Customer { Telephone: string tel } customer && tel.StartsWith("347"))
+            {
+                Console.WriteLine($"Nome: {customer.Name}"); //stampa Nome: Francy
+            }
+
 
             var a = new { x = 1, y = 2, z = 3 }; //x=1, y=2, z=3
 
@@ -80,7 +92,6 @@ namespace IsPatternMatching
     public class MyClass
     {
         private int[] invalidValues = { 1, 4, 7, 9 };
-
 
         public bool IsValid(int value)
         {
