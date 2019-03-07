@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -60,29 +61,30 @@ namespace IsPatternMatching
             clienti[2] = new Customer() { Name = "caterina", Telephone = null };
             clienti[3] = new Customer() { Name = "matilda", Telephone = "456" };
 
-
-            foreach(var cust in clienti)
+            //property pattern
+            foreach(var c in clienti)
             {
-                if(cust is Customer { Telephone: null, Name: string n})
+                if(c is Customer { Telephone: null, Name: string n})
                 {
                     Console.WriteLine($"Il cliente {n} non ha un numero di telefono");
                 }
-                else
-                {
-                    Console.WriteLine($"{cust.Name} ha un bel nome!");
-                }
             }
-
-            object obj1 = new Customer() { Name = "Francy", Telephone = "347" };
             
-            if (obj1 is Customer { Telephone: string tel } customer && tel.StartsWith("347"))
+
+            obj = new Customer() { Name = "Francy", Telephone = "347" };
+            if(obj is Customer { Telephone: string tel} customer && tel.StartsWith("347"))
             {
-                Console.WriteLine($"Nome: {customer.Name}"); //stampa Nome: Francy
+                Console.WriteLine($"Nome: {customer.Name} Telefono: {tel}");
+            }
+            
+            var a = new { x = 1, y = 2, z = 3 }; //x=1, y=2, z=3
+            if(a is { x: 1, y: _, z: 3})
+            {
+                Console.WriteLine(a.ToString());
             }
 
-
-            var a = new { x = 1, y = 2, z = 3 }; //x=1, y=2, z=3
-
+            Point pt = new Point(3,4);
+            (int x, int y) = pt;
 
             Console.ReadLine();
         }
@@ -92,6 +94,7 @@ namespace IsPatternMatching
     public class MyClass
     {
         private int[] invalidValues = { 1, 4, 7, 9 };
+
 
         public bool IsValid(int value)
         {
