@@ -54,7 +54,7 @@ namespace Switch
             Quadrato q=new Quadrato();
             q.Lato=5;
             Cerchio cerchio=new Cerchio();
-            cerch.Raggio=4;
+            cerchi.Raggio=4;
 
            
             var areaQuadrato=CalcArea1(q);

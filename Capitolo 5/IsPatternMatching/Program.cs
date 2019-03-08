@@ -69,14 +69,15 @@ namespace IsPatternMatching
                     Console.WriteLine($"Il cliente {n} non ha un numero di telefono");
                 }
             }
-            
 
-            obj = new Customer() { Name = "Francy", Telephone = "347" };
-            if(obj is Customer { Telephone: string tel} customer && tel.StartsWith("347"))
+
+            object obj1 = new Customer() { Name = "Francy", Telephone = "347" };
+
+            if (obj1 is Customer { Telephone: string tel } customer && tel.StartsWith("347"))
             {
-                Console.WriteLine($"Nome: {customer.Name} Telefono: {tel}");
+                Console.WriteLine($"Nome: {customer.Name}"); //stampa Nome: Francy
             }
-            
+
             var a = new { x = 1, y = 2, z = 3 }; //x=1, y=2, z=3
             if(a is { x: 1, y: _, z: 3})
             {
