@@ -19,7 +19,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IsPatternMatching", "Capito
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Capitolo 6", "Capitolo 6", "{F37F279E-2609-4DC7-93C7-8481913CD911}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Switch", "Capitolo 6\Switch\Switch.csproj", "{BFA5BAFF-AC5F-4729-A9AE-73E40EB1C087}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Istruzione Switch", "Capitolo 6\Switch\Istruzione Switch.csproj", "{BFA5BAFF-AC5F-4729-A9AE-73E40EB1C087}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Istruzione If", "Capitolo 6\Istruzione If\Istruzione If.csproj", "{0D9139C0-11DF-43C3-A8CC-93B70B86F237}"
 EndProject
