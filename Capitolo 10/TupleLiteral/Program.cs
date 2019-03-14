@@ -18,9 +18,7 @@ namespace TupleLiteral
             var (città, lat, lon) = coord;
 
             (char inizio, char fine, int lunghezza) = "Hello World";
-
             (inizio, fine, lunghezza) = "";
-
 
             //confronto
             var tupleA = (one: 1, three: 3, five: 5);
