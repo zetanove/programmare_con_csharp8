@@ -10,9 +10,9 @@ namespace TipiInnestati
     {
         private string modello;
 
-        internal Battery battery;
+        private protected Battery battery;
 
-        internal class Battery
+        private protected class Battery
         {
             private SmartPhone phone;
             internal Battery(SmartPhone phone)
@@ -50,6 +50,14 @@ namespace TipiInnestati
             public double PercentualeCarica { get; set; }
 
             public enum LivelloBatteria { zero, basso, medio, alto, totale }
+        }
+    }
+
+    public class NewSmartphone:SmartPhone
+    {
+        public NewSmartphone()
+        {
+            this.battery = new Battery(this);
         }
     }
 

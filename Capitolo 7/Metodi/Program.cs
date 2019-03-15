@@ -62,6 +62,12 @@ namespace Metodi
             return a + b;
         }
 
+        //usato per esempio parametri denominati e posizionali
+        static int MioMetodo(int a, int b, int c)
+        {
+            return a + b + c;
+        }
+
         static void Main(string[] args)
         {
             double numero = 2;
@@ -106,6 +112,8 @@ namespace Metodi
 
             int somma=calc.Somma(2, 3);
 
+            somma = MioMetodo(a: 1, 2, c: 3);
+
 
             Ricorsione ric = new Ricorsione();
             var fatt=ric.Fattoriale(5);
@@ -114,5 +122,7 @@ namespace Metodi
             lf.Demo();
             Console.WriteLine(fatt);
         }
+
+       
     }
 }

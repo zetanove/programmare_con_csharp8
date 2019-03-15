@@ -20,6 +20,18 @@ namespace TupleLiteral
             (char inizio, char fine, int lunghezza) = "Hello World";
             (inizio, fine, lunghezza) = "";
 
+
+            (int Primo, string Secondo) coppia = (Numero: 1, Nome: "il primo numero");
+            coppia.Primo = 123;
+            coppia.Secondo = "Numero cambiato";
+
+            //in C# 7.1 nomi degli elementi dedotti dalle variabili
+            int numero = 1;
+            string nome = "Matilda";
+            var nuovaCoppia = (numero, nome);
+            Console.WriteLine($"numero: {nuovaCoppia.numero}, nome: {nuovaCoppia.nome}");
+
+
             //confronto
             var tupleA = (one: 1, three: 3, five: 5);
             var tupleB = (longa: 1L, longb: 3L, longc: 5L);
