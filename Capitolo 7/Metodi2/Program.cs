@@ -1,19 +1,11 @@
-﻿/*
- * Programmare con C# 6 guida completa
- * Autore: Antonio Pelleriti
- * Capitolo 6: metodi
- */
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System;
+
 
 namespace Metodi
 {
     class Uomo
     {
-        public int altezza=170;
+        public int altezza = 170;
     }
 
     class Program
@@ -77,8 +69,8 @@ namespace Metodi
             double risultato = calc.Potenza(numero, esponente);
             Console.WriteLine("{0}^{1}={2}", numero, esponente, risultato);
             Console.WriteLine("numero={0}, esponente={1}, risultato={2}", numero, esponente, risultato);
-                
-            int i=1;
+
+            int i = 1;
             calc.PassByValue(i);
             Console.WriteLine("i={0}", i);
 
@@ -100,29 +92,53 @@ namespace Metodi
             CambiaAltezza2(ref uomo);
             Console.WriteLine("dopo metodo: {0}", uomo.altezza);
 
-            int p2,p3;
+            int p2, p3;
             PotenzeMultiple(4, out p2, out p3);
 
-            double media=CalcolaMedia(1, 2, 3.4, 6, 9.2);
-            media = CalcolaMedia(new double[] {2, 4, 5.9, 33.9 });
-            double d= CalcolaMedia();
+            double media = CalcolaMedia(1, 2, 3.4, 6, 9.2);
+            media = CalcolaMedia(new double[] { 2, 4, 5.9, 33.9 });
+            double d = CalcolaMedia();
 
             int sum = Optional(1);
             sum = Optional(b: 2);
 
-            int somma=calc.Somma(2, 3);
+            int somma = calc.Somma(2, 3);
 
             somma = MioMetodo(a: 1, 2, c: 3);
 
 
             Ricorsione ric = new Ricorsione();
-            var fatt=ric.Fattoriale(5);
+            var fatt = ric.Fattoriale(5);
 
             LocalFunction lf = new LocalFunction();
             lf.Demo();
             Console.WriteLine(fatt);
+
+            TestRefReturnLocal testRef = new TestRefReturnLocal();
+            testRef.PrintNumbers();
+            ref int number = ref testRef.FindNumber(7);
+            number = 123; //modifico il riferimento
+            testRef.PrintNumbers();
+
+
+            number = ref testRef.FindNumber(15); //local ref reassign
+
+            int[] array = { 1, 2, 3, 4, 5 };
+            int[] array2 = { 1, 2, 3, 4, 5 };
+            int val = array[1];
+            val = 999;
+            Console.WriteLine(array[1]); //non cambia valore
+
+            ref int refVal = ref array[1];
+            refVal = 999;
+            Console.WriteLine(array[1]); //cambia valore
+
+            refVal = ref array2[1];
+            Console.WriteLine(refVal); 
+            refVal = 999;
+            Console.WriteLine(array[1]); //cambia valore nell'array2
         }
 
-       
+
     }
 }

@@ -10,9 +10,9 @@ namespace TipiInnestati
     {
         private string modello;
 
-        private protected Battery battery;
+        protected internal Battery battery;
 
-        private protected class Battery
+        protected internal class Battery
         {
             private SmartPhone phone;
             internal Battery(SmartPhone phone)

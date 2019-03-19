@@ -1,5 +1,5 @@
 ﻿/*
- * Programmare con C# 6 guida completa
+ * Programmare con C# 8 guida completa
  * Autore: Antonio Pelleriti
  * Capitolo 6: proprietà
  */

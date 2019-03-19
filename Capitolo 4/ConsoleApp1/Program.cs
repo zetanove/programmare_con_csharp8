@@ -15,6 +15,11 @@ namespace Utilizzo_Tipi
             byte min = Byte.MinValue; // = 0
             byte max = Byte.MaxValue; // = 255
             Console.WriteLine($"min byte value {min}, max value (max)");
+
+            Span<int> span = new Span<int>();
         }
+
+       
+
     }
 }
