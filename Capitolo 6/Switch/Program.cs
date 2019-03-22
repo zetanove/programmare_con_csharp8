@@ -171,12 +171,12 @@ namespace Switch
             _ => "unknown"
         };
 
-        static string Display(Customer o) => o switch
-        {
-            { Telefono: null, DataNascita: var d } c when d.Year==1975 => "nato il "+c.DataNascita,
-            Customer { Sesso: 'm'} p => $"maschio",
-            _ => "unknown"
-        };
+        //static string Display(Customer o) => o switch
+        //{
+        //    { Telefono: null, DataNascita: var d } c when d.Year==1975 => "nato il "+c.DataNascita,
+        //    Customer { Sesso: 'm'} p => $"maschio",
+        //    _ => "unknown"
+        //};
 
 
         class Figura

@@ -33,6 +33,13 @@ namespace Metodi
             Console.WriteLine("dopo l'assegnazione: {0}", uomo.altezza);
         }
 
+        static void CambiaAltezza3(in Uomo uomo)
+        {
+            Console.WriteLine("prima dell'assegnazione: {0}", uomo.altezza);
+            uomo.altezza = 123;
+            Console.WriteLine("dopo l'assegnazione: {0}", uomo.altezza);
+        }
+
         static void PotenzeMultiple(int val, out int potenza2, out int potenza3)
         {
             potenza2 = val * val;
@@ -90,6 +97,11 @@ namespace Metodi
             uomo = new Uomo();
             Console.WriteLine("prima del metodo: {0}", uomo.altezza);
             CambiaAltezza2(ref uomo);
+            Console.WriteLine("dopo metodo: {0}", uomo.altezza);
+
+            uomo = new Uomo();
+            Console.WriteLine("prima del metodo: {0}", uomo.altezza);
+            CambiaAltezza3(in uomo);
             Console.WriteLine("dopo metodo: {0}", uomo.altezza);
 
             int p2, p3;

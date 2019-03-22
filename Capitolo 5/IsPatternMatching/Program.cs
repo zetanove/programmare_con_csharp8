@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -84,8 +83,8 @@ namespace IsPatternMatching
                 Console.WriteLine(a.ToString());
             }
 
-            Point pt = new Point(3,4);
-            (int x, int y) = pt;
+            //Point pt = new Point(3,4);
+            //(int x, int y) = pt;
 
             Console.ReadLine();
         }

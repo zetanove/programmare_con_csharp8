@@ -13,8 +13,8 @@ namespace TryCatch
     {
         static void Main(string[] args)
         {
-            //Esempio1();
-            //Esempio2();
+            Esempio1();
+            Esempio2();
             Esempio3();
             EsempioTryFinally();
             NestedTryCatch();
@@ -50,7 +50,7 @@ namespace TryCatch
                 int ris = a / b;
                 Console.WriteLine("{0}/{1}={2}", a, b, ris);
             }
-            catch(DivideByZeroException)
+            catch (DivideByZeroException)
             {
                 Console.WriteLine("Impossibile dividere per zero");
             }
@@ -71,7 +71,7 @@ namespace TryCatch
             catch (DivideByZeroException ex)
             {
                 PrintExceptionInfo(ex);
-               
+
             }
             Console.ReadLine();
         }
@@ -79,21 +79,21 @@ namespace TryCatch
         private static void EsempioTryFinally()
         {
             string path = System.IO.Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location);
-            path=Path.Combine(path, "TextFile.txt");
-            using(StreamReader sr=File.OpenText(path))
+            path = Path.Combine(path, "TextFile.txt");
+            using (StreamReader sr = File.OpenText(path))
             {
-                string content=sr.ReadToEnd();
+                string content = sr.ReadToEnd();
             }
 
-            StreamReader sr2=null;
+            StreamReader sr2 = null;
             try
             {
-                sr2=File.OpenText(path);
+                sr2 = File.OpenText(path);
                 string content = sr2.ReadToEnd();
             }
             finally
             {
-                if(sr2!=null)
+                if (sr2 != null)
                     sr2.Dispose();
             }
         }
@@ -105,7 +105,7 @@ namespace TryCatch
             }
             catch (FileNotFoundException)
             {
-                throw ;
+                throw;
 
             }
             catch (FormatException ex)
@@ -147,6 +147,6 @@ namespace TryCatch
             Console.WriteLine("HelpLink: {0}", ex.HelpLink);
             Console.WriteLine("InnerException: {0}", ex.InnerException);
             Console.WriteLine("Method Name: {0}", ex.TargetSite.Name);
-        } 
+        }
     }
 }
