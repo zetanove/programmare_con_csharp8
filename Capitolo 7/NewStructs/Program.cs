@@ -20,7 +20,7 @@ namespace NewStructs
             c.spanInt= new Span<int>(new int[] { 1,2,3});
 
             ReadonlyPoint rpt = new ReadonlyPoint(0,0);
-            rpt.X = 0;
+            //rpt.X = 0;
         }
 
         static void PassStruct(in NuovaStruct ns)
