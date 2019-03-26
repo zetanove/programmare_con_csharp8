@@ -101,7 +101,7 @@ namespace Metodi
 
             uomo = new Uomo();
             Console.WriteLine("prima del metodo: {0}", uomo.altezza);
-            CambiaAltezza3(in uomo);
+            CambiaAltezza3(uomo);
             Console.WriteLine("dopo metodo: {0}", uomo.altezza);
 
             int p2, p3;

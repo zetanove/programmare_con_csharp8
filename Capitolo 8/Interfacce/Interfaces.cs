@@ -4,7 +4,9 @@ using System.Text;
 
 namespace Interfacce
 {
-    interface Interfaces
+    interface IA
     {
+        //C# 8 default implementation
+        void M() { WriteLine("IA.M"); }
     }
 }
