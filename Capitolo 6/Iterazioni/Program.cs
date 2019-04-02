@@ -85,7 +85,12 @@ namespace Iterazioni
 
 
             //range e indici
+            
             int[] list = new[] {1,2,3,4,5,6,7,8,9,10};
+
+            Range rng = new Range(0, ^1);
+            int[] rngVal = list[rng];
+            rngVal = list[2..^2];
 
             var thirdItem = list[2];                // list[2]
             Console.WriteLine(thirdItem);
