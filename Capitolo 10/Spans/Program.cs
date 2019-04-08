@@ -14,10 +14,10 @@ namespace Spans
 
         private static Span<int> IntroSpans()
         {
-            int[] arr1 = { 1, 4, 5, 11, 13, 18 };
+            int[] arr1 = { 1, 2, 3, 4, 5 };
             var span1 = new Span<int>(arr1);
-            span1[1] = 11;
-            Console.WriteLine($"arr1[1] is changed via span1[1]:{arr1[1]}");
+            span1[1] = 123;
+            Console.WriteLine($"arr1[1] modificato tramite span1[1]:{arr1[1]}");
             return span1;
         }
 
