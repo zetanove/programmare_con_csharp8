@@ -4,9 +4,26 @@ using System.Text;
 
 namespace Interfacce
 {
-    interface IA
+    interface IDocument
     {
-        //C# 8 default implementation
-        void M() { WriteLine("IA.M"); }
+        void Print();
+        void Save(string path)
+        {
+            Console.WriteLine($"IDocument.Save({path})");
+        }
     }
+
+    class Report : IDocument
+    {
+        public void Print()
+        {
+            Console.WriteLine("Print");
+        }
+
+        //public void Save(string path)
+        //{
+        //    Console.WriteLine("Save " + path);
+        //}
+    }
+
 }
