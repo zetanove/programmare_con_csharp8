@@ -32,6 +32,11 @@ namespace TupleLiteral
             Console.WriteLine($"numero: {nuovaCoppia.numero}, nome: {nuovaCoppia.nome}");
 
 
+            nuovaCoppia.numero = 1;
+            nuovaCoppia.nome = "Matilda";
+            Console.WriteLine($"numero: {nuovaCoppia.numero}, nome: {nuovaCoppia.nome}");
+
+
             //confronto
             var tupleA = (one: 1, three: 3, five: 5);
             var tupleB = (longa: 1L, longb: 3L, longc: 5L);
@@ -40,7 +45,6 @@ namespace TupleLiteral
                 Console.WriteLine("I valori coincidono.");
             else
                 Console.WriteLine("I valori sono differenti.");
-
         }
     }
 
