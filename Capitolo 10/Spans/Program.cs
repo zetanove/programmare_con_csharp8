@@ -9,7 +9,7 @@ namespace Spans
             Console.WriteLine("Hello World!");
 
             var sp = IntroSpans();
-            CreateSlices(sp);
+            EsempioSlice();
         }
 
         private static Span<int> IntroSpans()
@@ -21,17 +21,22 @@ namespace Spans
             return span1;
         }
 
-        private static Span<int> CreateSlices(Span<int> span1)
+        private static void EsempioSlice()
         {
-            Console.WriteLine(nameof(CreateSlices));
-            int[] arr2 = { 3, 5, 7, 9, 11, 13, 15 };
-            var span2 = new Span<int>(arr2);
-            var span3 = new Span<int>(arr2, start: 3, length: 3);
-            var span4 = span1.Slice(start: 2, length: 4);
-            DisplaySpan("content of span3", span3);
-            DisplaySpan("content of span4", span4);
+            Console.WriteLine(nameof(EsempioSlice));
+            int[] arr1 = { 1,2,3,4,5,6,7,8,9,10 };
+            DisplaySpan("contenuto arr1", arr1);
+            var span2 = new Span<int>(arr1, start: 2, length: 4);
+
+            DisplaySpan("contenuto span2", span2);
+            for (int i = 0; i < span2.Length; i++)
+                span2[i] *= 2;
+            DisplaySpan("contenuto arr1 post modifica: ", arr1);
+
+            var span3 = span2.Slice(start: 1, length: 3);
+            DisplaySpan("contenuto span2", span2);
+            DisplaySpan("contenuto span3", span3);
             Console.WriteLine();
-            return span2;
         }
 
         private static void DisplaySpan(string title, ReadOnlySpan<int> span)
