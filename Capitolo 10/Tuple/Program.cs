@@ -1,7 +1,7 @@
 ﻿/*
- * Programmare con C# 7 guida completa
+ * Programmare con C# 8 guida completa
  * Autore: Antonio Pelleriti
- * Capitolo 9: tuple
+ * Capitolo 10: tuple
  */
 using System;
 
@@ -19,7 +19,7 @@ namespace TupleTest
 
             var record2 = Tuple.Create("Roma", 2870000, (short)2011);
 
-            
+
             record2 = Tuple.Create<string, int, short>("Roma", 2870000, (short)2011);
             var record3 = Tuple.Create<string, int, short>("Roma", 2870000, (short)2011);
             if (record2 == record3)
@@ -28,9 +28,10 @@ namespace TupleTest
 
             if (record2.Equals(record3))
                 Console.WriteLine("Le tuple sono uguali");
-            
-            var tuple8=Tuple.Create(1,2.0f,3.0d,4L,5m,6UL,"7","8");
-            string t8= tuple8.Rest.Item1;
+
+
+            var tuple8 = Tuple.Create(1, 2.0f, 3.0d, 4L, 5m, 6UL, "7", "8");
+            string t8 = tuple8.Rest.Item1;
         }
 
         public Tuple<string, int, short> LoadCityData()
@@ -41,7 +42,5 @@ namespace TupleTest
             var record = Tuple.Create<string, int, short>(nome, pop, anno);
             return record;
         }
-
-
     }
 }

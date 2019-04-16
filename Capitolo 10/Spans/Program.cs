@@ -10,12 +10,31 @@ namespace Spans
 
             var sp = IntroSpans();
             EsempioSlice();
+
+            EsempioMemory();
+        }
+
+        private static void EsempioMemory()
+        {
+            int[] arr = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+            Memory<int> mem = new Memory<int>(arr);
+            var mem2=arr.AsMemory();
+
+            foreach(var i in mem.Span)
+            {
+                Console.WriteLine(i);
+            }
+            Console.WriteLine(mem2[..]);
+
         }
 
         private static Span<int> IntroSpans()
         {
             int[] arr1 = { 1, 2, 3, 4, 5 };
             var span1 = new Span<int>(arr1);
+            Span<int> span2 = arr1;
+
+
             span1[1] = 123;
             Console.WriteLine($"arr1[1] modificato tramite span1[1]:{arr1[1]}");
             return span1;

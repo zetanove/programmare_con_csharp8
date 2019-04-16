@@ -1,7 +1,7 @@
 ﻿/*
- * Programmare con C# 7 guida completa
+ * Programmare con C# 8 guida completa
  * Autore: Antonio Pelleriti
- * Capitolo 9: classi generiche
+ * Capitolo 10: classi generiche
  */
 
 using System;
