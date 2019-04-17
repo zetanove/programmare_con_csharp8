@@ -99,6 +99,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Delegates", "Capitolo 11\De
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Events", "Capitolo 11\Events\Events.csproj", "{6AB11937-A2B0-405D-8A94-8B08603C6A22}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWindowsForms", "Capitolo 11\HelloWindowsForms\HelloWindowsForms.csproj", "{9B604B86-B024-40EB-819A-3484C93E35B5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -261,6 +263,10 @@ Global
 		{6AB11937-A2B0-405D-8A94-8B08603C6A22}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6AB11937-A2B0-405D-8A94-8B08603C6A22}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6AB11937-A2B0-405D-8A94-8B08603C6A22}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B604B86-B024-40EB-819A-3484C93E35B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B604B86-B024-40EB-819A-3484C93E35B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B604B86-B024-40EB-819A-3484C93E35B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B604B86-B024-40EB-819A-3484C93E35B5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -304,6 +310,7 @@ Global
 		{D8850321-72FB-47A4-89D2-A33E4E3863B6} = {4D90DE45-BA7E-45F2-ABB1-AD7AFA29FD58}
 		{1657A6AD-CBFB-44C3-A754-2BA5421AD036} = {DC39D012-E548-444E-A436-F9D2EF339AE4}
 		{6AB11937-A2B0-405D-8A94-8B08603C6A22} = {DC39D012-E548-444E-A436-F9D2EF339AE4}
+		{9B604B86-B024-40EB-819A-3484C93E35B5} = {DC39D012-E548-444E-A436-F9D2EF339AE4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {132800A9-22C3-4E68-8C0B-523E7FDC6BE7}
