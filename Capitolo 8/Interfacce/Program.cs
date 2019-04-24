@@ -6,7 +6,10 @@ namespace Interfacce
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Interfaces");
+
+            Report report = new Report();
+            (report as IDocument).Save("path");
         }
     }
 }

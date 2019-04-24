@@ -13,7 +13,7 @@ namespace Interfacce
         }
     }
 
-    class Report : IDocument
+    internal class Report : IDocument
     {
         public void Print()
         {

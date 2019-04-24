@@ -65,6 +65,14 @@ namespace Cap10_LINQ
             query = (from n in array select n);
             int count = query.Count(n => n > 0);
 
+
+            string[] righe = new[] {"a", "1", "2", "d"};
+
+            var qs = from s in righe
+                        select new { isnum=int.TryParse(s, out var i), num=i };
+
+            foreach (var result in qs)
+                Console.WriteLine(result); //risultato 16, 36
         }
     }
 }
