@@ -23,9 +23,9 @@ namespace AsyncAwait
             Console.WriteLine("before");
             MetodoAsincrono();
             Console.WriteLine("after");
-            EsecuzioneConcorrente();
+            //EsecuzioneConcorrente();
 
-            UseAwait();
+            //UseAwait();
 
             Console.ReadLine();
         }
