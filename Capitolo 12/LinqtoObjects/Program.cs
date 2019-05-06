@@ -107,8 +107,8 @@ namespace LinqToObjects
             string first = (from team in teams
                             select team.TeamName).Min();
 
-            string frase = "senatus populus que romanus";
-            var acronimo = frase.Split(' ').Aggregate("", (result, word) => result + word.ToUpper()[0] + ".");
+            string frase = "ti voglio tanto bene";
+            var acronimo = frase.Split(' ').Aggregate("", (result, word) => result + word.ToUpper().First() + ".");
             Console.WriteLine(acronimo);
 
             var queryAggregate = from team in teams
