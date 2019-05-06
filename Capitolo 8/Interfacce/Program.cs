@@ -8,8 +8,13 @@ namespace Interfacce
         {
             Console.WriteLine("Interfaces");
 
-            Report report = new Report();
-            (report as IDocument).Save("path");
+            IDocument report = new Report();
+            report.Save("path");
+
+
+
+            D obj = new DClass();
+            obj.Method();
         }
     }
 }

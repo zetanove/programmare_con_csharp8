@@ -7,7 +7,7 @@ namespace Interfacce
     interface IDocument
     {
         void Print();
-        void Save(string path)
+        public void Save(string path)
         {
             Console.WriteLine($"IDocument.Save({path})");
         }
@@ -26,4 +26,41 @@ namespace Interfacce
         //}
     }
 
+
+    interface A
+    {
+        void Method()
+        {
+            Console.WriteLine("A");
+        }
+    }
+
+    interface B:A
+    {
+        void Method()
+        {
+            Console.WriteLine("B");
+        }
+    }
+
+    interface C:A
+    {
+        void Method()
+        {
+            Console.WriteLine("C");
+        }
+    }
+
+    interface D: B, C
+    {
+        void Method()
+        {
+            Console.WriteLine("D");
+        }
+    }
+
+    class DClass : D
+    {
+
+    }
 }
