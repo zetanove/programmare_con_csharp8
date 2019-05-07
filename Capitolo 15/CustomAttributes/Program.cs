@@ -32,7 +32,7 @@ namespace Custom_Attributes
 
     }
 
-
+   
 
     [AttributeUsage(AttributeTargets.Class | AttributeTargets.Struct, Inherited = false, AllowMultiple = true)]
     sealed class VehicleTypeAttribute : Attribute

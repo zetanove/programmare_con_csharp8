@@ -17,6 +17,8 @@ namespace TupleLiteral
 
             var (città, lat, lon) = coord;
 
+            var (_, lat1, _) = coord;
+
             (char inizio, char fine, int lunghezza) = "Hello World";
             (inizio, fine, lunghezza) = "";
 

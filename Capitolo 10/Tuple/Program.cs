@@ -29,7 +29,6 @@ namespace TupleTest
             if (record2.Equals(record3))
                 Console.WriteLine("Le tuple sono uguali");
 
-
             var tuple8 = Tuple.Create(1, 2.0f, 3.0d, 4L, 5m, 6UL, "7", "8");
             string t8 = tuple8.Rest.Item1;
         }

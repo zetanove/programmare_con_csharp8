@@ -17,10 +17,10 @@ namespace CustomAttributes
 
     class TestObsolete
     {
-        static void Main()
+        static void TestMain()
         {
             ObsoleteClass obj = new ObsoleteClass();
-            obj.Metodo();
+            //obj.Metodo();
         }
     }
 }
