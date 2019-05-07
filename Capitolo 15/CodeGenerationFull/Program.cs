@@ -22,14 +22,12 @@ namespace Code_Generation
             dynMethod.Invoke(null, null);
 
             AssemblyName name = new AssemblyName("DynamicAssembly");
-            //AssemblyBuilder assemblyBuilder= AppDomain.CurrentDomain.DefineDynamicAssembly(name, AssemblyBuilderAccess.RunAndSave);
-            AssemblyBuilder assemblyBuilder = AssemblyBuilder.DefineDynamicAssembly(name, AssemblyBuilderAccess.Run);
+            AssemblyBuilder assemblyBuilder= AppDomain.CurrentDomain.DefineDynamicAssembly(name, AssemblyBuilderAccess.RunAndSave);
+            
+            ModuleBuilder moduleBuilder= assemblyBuilder.DefineDynamicModule("DynamicModule", "DynamicAssembly.dll");
+            TypeBuilder tb= moduleBuilder.DefineType("HelloClass", TypeAttributes.Class|TypeAttributes.Public);
 
-            //ModuleBuilder moduleBuilder= assemblyBuilder.DefineDynamicModule("DynamicModule", "DynamicAssembly.dll");
-            ModuleBuilder moduleBuilder = assemblyBuilder.DefineDynamicModule("DynamicModule");
-            TypeBuilder tb = moduleBuilder.DefineType("HelloClass", TypeAttributes.Class | TypeAttributes.Public);
-
-            MethodBuilder mb = tb.DefineMethod("PrintHello", MethodAttributes.Public, null, new Type[] { typeof(string) });
+            MethodBuilder mb= tb.DefineMethod("PrintHello", MethodAttributes.Public, null, new Type[]{typeof(string)});
 
             ILGenerator myMethodIL = mb.GetILGenerator();
             myMethodIL.Emit(OpCodes.Ldstr, "Hello ");
@@ -40,14 +38,13 @@ namespace Code_Generation
             myMethodIL.Emit(OpCodes.Call, writeMethod);
             myMethodIL.Emit(OpCodes.Ret);
 
-            Type helloType = tb.CreateType();
+            Type helloType=tb.CreateType();
 
-            object helloObj = Activator.CreateInstance(helloType);
-            MethodInfo helloInstanceMethod = helloType.GetMethod("PrintHello", new Type[] { typeof(string) });
-            helloInstanceMethod.Invoke(helloObj, new object[] { "Antonio" });
+            object helloObj= Activator.CreateInstance(helloType);
+            MethodInfo helloInstanceMethod= helloType.GetMethod("PrintHello", new Type[] { typeof(string) });
+            helloInstanceMethod.Invoke(helloObj, new object[]{ "Antonio" });
 
-            //assemblyBuilder.Save("DynamicAssembly.dll");
-
+            assemblyBuilder.Save("DynamicAssembly.dll");
         }
     }
 }
