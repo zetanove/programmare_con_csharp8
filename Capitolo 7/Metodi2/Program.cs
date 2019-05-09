@@ -104,8 +104,22 @@ namespace Metodi
             CambiaAltezza3(uomo);
             Console.WriteLine("dopo metodo: {0}", uomo.altezza);
 
-            int p2, p3;
-            PotenzeMultiple(4, out p2, out p3);
+            int p3;
+            PotenzeMultiple(4, out int p2, out p3); //p2 è dichiarata inline
+
+            //discard
+            if(int.TryParse("123", out _))
+            {
+                Console.WriteLine("è un intero, ma lo scarto");
+            }
+
+            if (int.TryParse("123", out int _))
+            {
+                Console.WriteLine("è un intero, ma lo scarto");
+            }
+
+
+            _ = int.TryParse("123", out int valIntero);
 
             double media = CalcolaMedia(1, 2, 3.4, 6, 9.2);
             media = CalcolaMedia(new double[] { 2, 4, 5.9, 33.9 });
@@ -150,7 +164,5 @@ namespace Metodi
             refVal = 999;
             Console.WriteLine(array[1]); //cambia valore nell'array2
         }
-
-
     }
 }
