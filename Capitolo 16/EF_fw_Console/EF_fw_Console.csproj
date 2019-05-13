@@ -52,26 +52,125 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Model1.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Model1.Context.tt</DependentUpon>
+    <Compile Include="BuyingGroups.cs">
+      <DependentUpon>WideWorldImporters.tt</DependentUpon>
     </Compile>
-    <Compile Include="Model1.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Model1.tt</DependentUpon>
+    <Compile Include="BuyingGroups_Archive.cs">
+      <DependentUpon>WideWorldImporters.tt</DependentUpon>
     </Compile>
-    <Compile Include="Model1.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Model1.edmx</DependentUpon>
+    <Compile Include="Cities.cs">
+      <DependentUpon>WideWorldImporters.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Cities_Archive.cs">
+      <DependentUpon>WideWorldImporters.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ColdRoomTemperatures.cs">
+      <DependentUpon>WideWorldImporters.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ColdRoomTemperatures_Archive.cs">
+      <DependentUpon>WideWorldImporters.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Colors.cs">
+      <DependentUpon>WideWorldImporters.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Colors_Archive.cs">
+      <DependentUpon>WideWorldImporters.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Countries.cs">
+      <DependentUpon>WideWorldImporters.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Countries_Archive.cs">
+      <DependentUpon>WideWorldImporters.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerCategories.cs">
+      <DependentUpon>WideWorldImporters.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerCategories_Archive.cs">
+      <DependentUpon>WideWorldImporters.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Customers.cs">
+      <DependentUpon>WideWorldImporters.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Customers1.cs">
+      <DependentUpon>WideWorldImporters.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Customers_Archive.cs">
+      <DependentUpon>WideWorldImporters.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerTransactions.cs">
+      <DependentUpon>WideWorldImporters.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DeliveryMethods.cs">
+      <DependentUpon>WideWorldImporters.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DeliveryMethods_Archive.cs">
+      <DependentUpon>WideWorldImporters.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DetermineCustomerAccess_Result.cs">
+      <DependentUpon>WideWorldImporters.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetMovementUpdates_Result.cs">
+      <DependentUpon>WideWorldImporters.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetOrderUpdates_Result.cs">
+      <DependentUpon>WideWorldImporters.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetPurchaseUpdates_Result.cs">
+      <DependentUpon>WideWorldImporters.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetSaleUpdates_Result.cs">
+      <DependentUpon>WideWorldImporters.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetStockHoldingUpdates_Result.cs">
+      <DependentUpon>WideWorldImporters.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetTransactionUpdates_Result.cs">
+      <DependentUpon>WideWorldImporters.tt</DependentUpon>
+    </Compile>
+    <Compile Include="InvoiceLines.cs">
+      <DependentUpon>WideWorldImporters.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Invoices.cs">
+      <DependentUpon>WideWorldImporters.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OrderLines.cs">
+      <DependentUpon>WideWorldImporters.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Orders.cs">
+      <DependentUpon>WideWorldImporters.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PackageTypes.cs">
+      <DependentUpon>WideWorldImporters.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PackageTypes_Archive.cs">
+      <DependentUpon>WideWorldImporters.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PaymentMethods.cs">
+      <DependentUpon>WideWorldImporters.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PaymentMethods_Archive.cs">
+      <DependentUpon>WideWorldImporters.tt</DependentUpon>
+    </Compile>
+    <Compile Include="People.cs">
+      <DependentUpon>WideWorldImporters.tt</DependentUpon>
+    </Compile>
+    <Compile Include="People_Archive.cs">
+      <DependentUpon>WideWorldImporters.tt</DependentUpon>
     </Compile>
     <Compile Include="Persona.cs">
       <DependentUpon>SsampleDatabase.tt</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PurchaseOrderLines.cs">
+      <DependentUpon>WideWorldImporters.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PurchaseOrders.cs">
+      <DependentUpon>WideWorldImporters.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SpecialDeals.cs">
+      <DependentUpon>WideWorldImporters.tt</DependentUpon>
+    </Compile>
     <Compile Include="SsampleDatabase.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -87,19 +186,87 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>SsampleDatabase.edmx</DependentUpon>
     </Compile>
+    <Compile Include="StateProvinces.cs">
+      <DependentUpon>WideWorldImporters.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StateProvinces_Archive.cs">
+      <DependentUpon>WideWorldImporters.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StockGroups.cs">
+      <DependentUpon>WideWorldImporters.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StockGroups_Archive.cs">
+      <DependentUpon>WideWorldImporters.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StockItemHoldings.cs">
+      <DependentUpon>WideWorldImporters.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StockItems.cs">
+      <DependentUpon>WideWorldImporters.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StockItemStockGroups.cs">
+      <DependentUpon>WideWorldImporters.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StockItems_Archive.cs">
+      <DependentUpon>WideWorldImporters.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StockItemTransactions.cs">
+      <DependentUpon>WideWorldImporters.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SupplierCategories.cs">
+      <DependentUpon>WideWorldImporters.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SupplierCategories_Archive.cs">
+      <DependentUpon>WideWorldImporters.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Suppliers.cs">
+      <DependentUpon>WideWorldImporters.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Suppliers1.cs">
+      <DependentUpon>WideWorldImporters.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Suppliers_Archive.cs">
+      <DependentUpon>WideWorldImporters.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SupplierTransactions.cs">
+      <DependentUpon>WideWorldImporters.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SystemParameters.cs">
+      <DependentUpon>WideWorldImporters.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TransactionTypes.cs">
+      <DependentUpon>WideWorldImporters.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TransactionTypes_Archive.cs">
+      <DependentUpon>WideWorldImporters.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VehicleTemperatures.cs">
+      <DependentUpon>WideWorldImporters.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VehicleTemperatures1.cs">
+      <DependentUpon>WideWorldImporters.tt</DependentUpon>
+    </Compile>
     <Compile Include="Veicolo.cs">
       <DependentUpon>SsampleDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WideWorldImporters.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WideWorldImporters.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WideWorldImporters.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WideWorldImporters.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WideWorldImporters.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WideWorldImporters.edmx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <EntityDeploy Include="Model1.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>Model1.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <None Include="Model1.edmx.diagram">
-      <DependentUpon>Model1.edmx</DependentUpon>
-    </None>
     <None Include="packages.config" />
     <EntityDeploy Include="SsampleDatabase.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
@@ -108,18 +275,15 @@
     <None Include="SsampleDatabase.edmx.diagram">
       <DependentUpon>SsampleDatabase.edmx</DependentUpon>
     </None>
+    <EntityDeploy Include="WideWorldImporters.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>WideWorldImporters.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="WideWorldImporters.edmx.diagram">
+      <DependentUpon>WideWorldImporters.edmx</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Model1.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>Model1.edmx</DependentUpon>
-      <LastGenOutput>Model1.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="Model1.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>Model1.edmx</DependentUpon>
-      <LastGenOutput>Model1.cs</LastGenOutput>
-    </Content>
     <Content Include="SsampleDatabase.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>SsampleDatabase.edmx</DependentUpon>
@@ -129,6 +293,16 @@
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>SsampleDatabase.edmx</DependentUpon>
       <LastGenOutput>SsampleDatabase.cs</LastGenOutput>
+    </Content>
+    <Content Include="WideWorldImporters.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>WideWorldImporters.edmx</DependentUpon>
+      <LastGenOutput>WideWorldImporters.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="WideWorldImporters.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>WideWorldImporters.edmx</DependentUpon>
+      <LastGenOutput>WideWorldImporters.cs</LastGenOutput>
     </Content>
   </ItemGroup>
   <ItemGroup>

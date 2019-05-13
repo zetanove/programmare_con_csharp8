@@ -26,7 +26,6 @@ namespace DisconnectedADO_NetCore
                 row["OrderID"], row["OrderDate"]));
             }
 
-            (localDB)\MSSQLLocalDB
 
         }
     }

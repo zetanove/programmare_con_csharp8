@@ -7,16 +7,16 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace EF_fw_Console
+namespace ModelFirst
 {
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class SampleDatabaseEntities : DbContext
+    public partial class CarModelContainer : DbContext
     {
-        public SampleDatabaseEntities()
-            : base("name=SampleDatabaseEntities")
+        public CarModelContainer()
+            : base("name=CarModelContainer")
         {
         }
     
@@ -25,7 +25,7 @@ namespace EF_fw_Console
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<Persona> Persona { get; set; }
-        public virtual DbSet<Veicolo> Veicolo { get; set; }
+        public virtual DbSet<Car> CarSet { get; set; }
+        public virtual DbSet<Person> PersonSet { get; set; }
     }
 }
