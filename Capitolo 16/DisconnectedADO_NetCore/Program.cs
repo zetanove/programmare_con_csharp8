@@ -8,7 +8,7 @@ namespace DisconnectedADO_NetCore
     {
         static void Main(string[] args)
         {
-            string connString = "Server=.;Integrated Security=true;database=WideWorldImporters";
+            string connString = "Server=(localDB)\\MSSQLLocalDB;Integrated Security=true;database=WideWorldImporters";
 
             DataSet ds = new DataSet();
             using (SqlConnection conn = new SqlConnection(connString))
@@ -17,6 +17,16 @@ namespace DisconnectedADO_NetCore
                 SqlDataAdapter adapter = new SqlDataAdapter("SELECT * FROM Sales.Orders", conn);
                 adapter.Fill(ds, "Products");
             }
+
+            DataTable dt = ds.Tables[0];
+            Console.WriteLine("{0} record", dt.Rows.Count);
+            foreach (DataRow row in dt.Rows)
+            {
+                Console.WriteLine(string.Format("ID: {0} , Date: {1}",
+                row["OrderID"], row["OrderDate"]));
+            }
+
+            (localDB)\MSSQLLocalDB
 
         }
     }
