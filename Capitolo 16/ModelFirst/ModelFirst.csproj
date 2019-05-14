@@ -93,6 +93,7 @@
       <LastGenOutput>CarModel.Context.cs</LastGenOutput>
       <DependentUpon>CarModel.edmx</DependentUpon>
     </Content>
+    <Content Include="CarModel.edmx.sql" />
     <Content Include="CarModel.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>CarModel.cs</LastGenOutput>
