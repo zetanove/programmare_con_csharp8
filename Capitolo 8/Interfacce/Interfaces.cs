@@ -11,6 +11,16 @@ namespace Interfacce
         {
             Console.WriteLine($"IDocument.Save({path})");
         }
+
+        public decimal GetDefaultNewMethod()
+        {
+            return DefaultNewMethod(this);
+        }
+
+        protected static decimal DefaultNewMethod(IDocument c)
+        {         
+            return 0;
+        }
     }
 
     internal class Report : IDocument
@@ -25,6 +35,14 @@ namespace Interfacce
         //    Console.WriteLine("Save " + path);
         //}
 
+        public decimal GetDefaultNewMethod()
+        {
+            if (new Random().Next()>0)
+            {
+                return IDocument.DefaultNewMethod(this);
+            }
+            else return -1;
+        }
     }
 
 

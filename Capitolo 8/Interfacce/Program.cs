@@ -13,6 +13,7 @@ namespace Interfacce
 
 
 
+
             D obj = new DClass();
             obj.Method();
         }
