@@ -58,4 +58,26 @@ namespace Custom_Attributes
         // This is a named argument
         public int Potenza { get; set; }
     }
+
+    [AttributeUsage(AttributeTargets.Method| AttributeTargets.Field | AttributeTargets.ReturnValue)]
+    class HelpAttribute : Attribute
+    {
+        public string HelpText { get; set; }
+
+    }
+
+    [Serializable]
+   
+    public class TestClass
+    {
+        [field: NonSerialized]
+        public string MioCampoSegreto { get; set; }
+
+        [method: Help, Obsolete]
+        public int method()
+        {
+            return 0;
+        }
+    }
+
 }
