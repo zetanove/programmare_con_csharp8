@@ -1,20 +1,10 @@
 ﻿using System;
-using System.ComponentModel.Design;
-using System.Diagnostics;
-using System.Diagnostics.CodeAnalysis;
-using System.Globalization;
 using System.Runtime.InteropServices;
 using System.Threading;
-using System.Threading.Tasks;
-using Microsoft;
-using Microsoft.VisualStudio;
-using Microsoft.VisualStudio.OLE.Interop;
 using Microsoft.VisualStudio.Shell;
-using Microsoft.VisualStudio.Shell.Interop;
-using Microsoft.Win32;
 using Task = System.Threading.Tasks.Task;
 
-namespace VSIXProject1
+namespace HelloExtension
 {
     /// <summary>
     /// This is the class that implements the package exposed by this assembly.
@@ -34,27 +24,14 @@ namespace VSIXProject1
     /// </para>
     /// </remarks>
     [PackageRegistration(UseManagedResourcesOnly = true, AllowsBackgroundLoading = true)]
-    [InstalledProductRegistration("#110", "#112", "1.0", IconResourceID = 400)] // Info on this package for Help/About
-    [Guid(FirstPackage.PackageGuidString)]
-    [SuppressMessage("StyleCop.CSharp.DocumentationRules", "SA1650:ElementDocumentationMustBeSpelledCorrectly", Justification = "pkgdef, VS and vsixmanifest are valid VS terms")]
-    //[ProvideAutoLoad(UIContextGuids80.SolutionExists)]
-    public sealed class FirstPackage : AsyncPackage
+    [Guid(HelloExtensionPackage.PackageGuidString)]
+    [ProvideMenuResource("Menus.ctmenu", 1)]
+    public sealed class HelloExtensionPackage : AsyncPackage
     {
         /// <summary>
-        /// FirstPackage GUID string.
+        /// HelloExtensionPackage GUID string.
         /// </summary>
-        public const string PackageGuidString = "c241cb78-3e93-4eda-8409-3b8d0902b44b";
-
-        /// <summary>
-        /// Initializes a new instance of the <see cref="FirstPackage"/> class.
-        /// </summary>
-        public FirstPackage()
-        {
-            // Inside this method you can place any initialization code that does not require
-            // any Visual Studio service because at this point the package object is created but
-            // not sited yet inside Visual Studio environment. The place to do all the other
-            // initialization is the Initialize method.
-        }
+        public const string PackageGuidString = "b36b5de7-dfc7-4033-a084-3add504345b4";
 
         #region Package Members
 
@@ -70,23 +47,7 @@ namespace VSIXProject1
             // When initialized asynchronously, the current thread may be a background thread at this point.
             // Do any initialization that requires the UI thread after switching to the UI thread.
             await this.JoinableTaskFactory.SwitchToMainThreadAsync(cancellationToken);
-
-            IVsUIShell uiShell = (IVsUIShell)await GetServiceAsync(typeof(SVsUIShell));
-            Assumes.Present(uiShell);
-            Guid clsid = Guid.Empty;
-            int result;
-            ErrorHandler.ThrowOnFailure(uiShell.ShowMessageBox(
-                0,
-                ref clsid,
-                "FirstPackage",
-                 string.Format(CultureInfo.CurrentCulture, "Inside {0}.Initialize()", this.GetType().FullName),
-                string.Empty,
-                0,
-                OLEMSGBUTTON.OLEMSGBUTTON_OK,
-                OLEMSGDEFBUTTON.OLEMSGDEFBUTTON_FIRST,
-                OLEMSGICON.OLEMSGICON_INFO,
-                0,
-                out result));
+            await HelloCommand.InitializeAsync(this);
         }
 
         #endregion
