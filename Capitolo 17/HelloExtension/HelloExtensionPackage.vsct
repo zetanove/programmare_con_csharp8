@@ -22,7 +22,7 @@
 
   <!--The Commands section is where commands, menus, and menu groups are defined.
       This section uses a Guid to identify the package that provides the command defined inside it. -->
-  <Commands package="guidCommand1Package">
+  <Commands package="guidHelloExtensionPackage">
     <!-- Inside this section we have different sub-sections: one for the menus, another
     for the menu groups, one for the buttons (the actual commands), one for the combos
     and the last one for the bitmaps used. Each element is identified by a command id that
@@ -36,7 +36,7 @@
          group as the part of a menu contained between two lines. The parent of a group
          must be a menu. -->
     <Groups>
-      <Group guid="guidCommand1PackageCmdSet" id="MyMenuGroup" priority="0x0600">
+      <Group guid="guidHelloExtensionPackageCmdSet" id="MyMenuGroup" priority="0x0600">
         <Parent guid="guidSHLMainMenu" id="IDM_VS_MENU_TOOLS"/>
       </Group>
     </Groups>
@@ -52,11 +52,11 @@
               <CommandFlag>DefaultInvisible</CommandFlag>
               <CommandFlag>DynamicVisibility</CommandFlag>
           If you do not want an image next to your command, remove the Icon node /> -->
-      <Button guid="guidCommand1PackageCmdSet" id="Command1Id" priority="0x0100" type="Button">
-        <Parent guid="guidCommand1PackageCmdSet" id="MyMenuGroup" />
+      <Button guid="guidHelloExtensionPackageCmdSet" id="HelloCommandId" priority="0x0100" type="Button">
+        <Parent guid="guidHelloExtensionPackageCmdSet" id="MyMenuGroup" />
         <Icon guid="guidImages" id="bmpPic1" />
         <Strings>
-          <ButtonText>Saluta!</ButtonText>
+          <ButtonText>Hello Extension</ButtonText>
         </Strings>
       </Button>
     </Buttons>
@@ -68,21 +68,21 @@
             bitmap strip containing the bitmaps and then there are the numeric ids of the elements used
             inside a button definition. An important aspect of this declaration is that the element id
             must be the actual index (1-based) of the bitmap inside the bitmap strip. -->
-      <Bitmap guid="guidImages" href="Resources\Command1.png" usedList="bmpPic1, bmpPic2, bmpPicSearch, bmpPicX, bmpPicArrows, bmpPicStrikethrough"/>
+      <Bitmap guid="guidImages" href="Resources\HelloCommand.png" usedList="bmpPic1, bmpPic2, bmpPicSearch, bmpPicX, bmpPicArrows, bmpPicStrikethrough"/>
     </Bitmaps>
   </Commands>
 
   <Symbols>
     <!-- This is the package guid. -->
-    <GuidSymbol name="guidCommand1Package" value="{2ff6417a-6bec-40bb-8574-9cf51356fb89}" />
+    <GuidSymbol name="guidHelloExtensionPackage" value="{b36b5de7-dfc7-4033-a084-3add504345b4}" />
 
     <!-- This is the guid used to group the menu commands together -->
-    <GuidSymbol name="guidCommand1PackageCmdSet" value="{caaf064a-d77a-425d-95c9-5c31820d85af}">
+    <GuidSymbol name="guidHelloExtensionPackageCmdSet" value="{e25faad3-f091-499d-ac0f-5f09b4eb40b4}">
       <IDSymbol name="MyMenuGroup" value="0x1020" />
-      <IDSymbol name="Command1Id" value="0x0100" />
+      <IDSymbol name="HelloCommandId" value="0x0100" />
     </GuidSymbol>
 
-    <GuidSymbol name="guidImages" value="{28321c1a-6df5-4cd7-80aa-c64a921fdd21}" >
+    <GuidSymbol name="guidImages" value="{62d70abf-da5e-4324-9818-e8575bbfe425}" >
       <IDSymbol name="bmpPic1" value="1" />
       <IDSymbol name="bmpPic2" value="2" />
       <IDSymbol name="bmpPicSearch" value="3" />
