@@ -54,24 +54,6 @@ namespace Metodi
                     return num <= 1 ? num : num * Fattoriale(num - 1, count);
                 }
             }
-        }
-
-        string fn = "name", ln = "surname";
-        void StaticLocalFunction()
-        {
-            var firstName = "Jeetendra";
-            var lastName = "Gund";
-
-            Console.WriteLine("My name is " + GetFullName(firstName, lastName));
-
-            //static string GetFullName() => firstName + ' ' + lastName;
-
-            //static string GetFullName()
-            //{
-            //    return fn + ' '+ ln;
-            //}
-
-            static string GetFullName(string first, string last) => first + ' ' + last;
-        }
+        }        
     }
 }
