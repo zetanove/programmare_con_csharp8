@@ -1,0 +1,22 @@
+﻿<Page
+    x:Class="UWPApp.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:UWPApp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <StackPanel HorizontalAlignment="Center">
+            <TextBlock FontSize="24">Hello World</TextBlock>
+            <Image Source="Assets/Square150x150Logo.png" Width="160" Height="160"></Image>
+
+            <TextBlock Text="{x:Bind DeviceFamily}"/>
+
+
+        </StackPanel>
+    </Grid>
+
+</Page>
