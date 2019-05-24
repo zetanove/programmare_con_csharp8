@@ -6,7 +6,7 @@ using ToDoWebApp.Models;
 
 namespace ToDoWebApp.Business
 {
-    interface ITodoActivityService
+    public interface ITodoActivityService
     {
         public List<TodoActivity> GetActivities();
 

@@ -14,6 +14,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using System.IO;
 using Microsoft.Extensions.FileProviders;
+using ToDoWebApp.Business;
 
 namespace ToDoWebApp
 {
@@ -46,6 +47,8 @@ namespace ToDoWebApp
             services.AddRazorPages();
 
             services.AddDirectoryBrowser();
+
+            services.AddSingleton<ITodoActivityService, TestActivityService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -85,6 +88,8 @@ namespace ToDoWebApp
                     pattern: "{controller=Home}/{action=Index}/{id?}");
                 endpoints.MapRazorPages();
             });
+
+
         }
     }
 }

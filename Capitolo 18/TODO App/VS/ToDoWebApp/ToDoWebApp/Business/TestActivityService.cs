@@ -13,6 +13,7 @@ namespace ToDoWebApp.Business
             List<TodoActivity> list = new List<TodoActivity>();
             list.Add(new TodoActivity("Test 1") { });
             list.Add(new TodoActivity("Test 2") { Date = new DateTime(2020, 01, 26), Completed = true });
+            list.Add(new TodoActivity("Test 3") { Date = DateTime.Now });
             return list; 
         }
     }

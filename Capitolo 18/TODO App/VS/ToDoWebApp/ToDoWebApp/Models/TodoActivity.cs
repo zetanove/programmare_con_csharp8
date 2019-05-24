@@ -17,6 +17,11 @@ namespace ToDoWebApp.Models
 
         public bool Completed { get; set; }
 
+        public TodoActivity()
+        {
+
+        }
+
         public TodoActivity(string title)
         {
             Id = Guid.NewGuid();
