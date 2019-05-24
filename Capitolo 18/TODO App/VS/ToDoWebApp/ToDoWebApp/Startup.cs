@@ -12,6 +12,8 @@ using ToDoWebApp.Data;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using System.IO;
+using Microsoft.Extensions.FileProviders;
 
 namespace ToDoWebApp
 {
@@ -42,6 +44,8 @@ namespace ToDoWebApp
             services.AddControllersWithViews()
                 .AddNewtonsoftJson();
             services.AddRazorPages();
+
+            services.AddDirectoryBrowser();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -61,6 +65,11 @@ namespace ToDoWebApp
 
             app.UseHttpsRedirection();
             app.UseStaticFiles();
+            app.UseDirectoryBrowser(new DirectoryBrowserOptions
+            {
+                FileProvider = new PhysicalFileProvider(Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "")),
+                RequestPath = "/static"
+            });
 
             app.UseCookiePolicy();
 
