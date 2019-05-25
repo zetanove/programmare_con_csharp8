@@ -48,7 +48,9 @@ namespace ToDoWebApp
 
             services.AddDirectoryBrowser();
 
-            services.AddSingleton<ITodoActivityService, TestActivityService>();
+            //services.AddSingleton<ITodoActivityService, TestActivityService>();
+
+            services.AddScoped<ITodoActivityService, DbActivityService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -26,6 +26,7 @@ namespace ToDoWebApp.Controllers
             return View(model);
         }
 
+        [HttpGet]
         public IActionResult EditActivity(Guid id)
         {
             var allActivities = _service.GetActivities();
@@ -36,7 +37,7 @@ namespace ToDoWebApp.Controllers
         [HttpPost]
         public IActionResult EditActivity(TodoActivity item)
         {
-
+            _service.SaveActivity(item);
             return RedirectToAction("Index");
         }
     }
