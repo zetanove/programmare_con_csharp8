@@ -23,6 +23,15 @@ namespace NewStructs
             //rpt.X = 0; //errore è sola lettura
 
             ref readonly ReadonlyPoint rrp = ref ReadonlyPoint.Origin;
+
+            Point3DWrong p3dwrong = new Point3DWrong();
+            ref var originReference = ref p3dwrong.Origin;
+            originReference.Origin = new Point3DWrong(1,2,3);
+            
+
+            Point3D p3d = new Point3D();
+            ref readonly var origRef2 = ref p3d.Origin;
+            //origRef2.Origin = new Point3D(1,2,3) { }; //errore è readonly
         }
 
         
@@ -57,4 +66,38 @@ namespace NewStructs
         private static ReadonlyPoint origin = new ReadonlyPoint(0, 0);
         public static ref readonly ReadonlyPoint Origin => ref origin;
     }
+
+
+    public struct Point3DWrong
+    {
+        public double x;
+        public double y;
+        public double z;
+        public Point3DWrong(double _x,double _y, double _z)
+        {
+            x = _x;
+            y = _y;
+            z = _z;
+        }
+
+        private static Point3DWrong origin = new Point3DWrong(0, 0, 0);
+        public ref Point3DWrong Origin => ref origin;
+    }
+
+    public struct Point3D
+    {
+        public double x;
+        public double y;
+        public double z;
+        public Point3D(double _x, double _y, double _z)
+        {
+            x = _x;
+            y = _y;
+            z = _z;
+        }
+
+        private static Point3D origin = new Point3D(0, 0, 0);
+        public ref readonly Point3D Origin => ref origin;
+    }
+
 }

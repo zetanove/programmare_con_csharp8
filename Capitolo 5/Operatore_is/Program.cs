@@ -1,10 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace IsPatternMatching
+namespace Operatore_is
 {
     class Program
     {
@@ -35,8 +32,8 @@ namespace IsPatternMatching
             DayOfWeek giorno = DateTime.Today.DayOfWeek;
             bool festive = giorno is DayOfWeek.Sunday; //true se oggi è domenica
 
-            //var pattern
 
+            //var pattern
             MyClass mc = new MyClass();
             test = mc.IsValid(2);
 
@@ -55,14 +52,14 @@ namespace IsPatternMatching
 
             Customer[] clienti = new Customer[5];
             clienti[0] = new Customer() { Name = "antonio", Telephone = null };
-            clienti[1] = new Customer() { Name =  null, Telephone = null };
+            clienti[1] = new Customer() { Name = null, Telephone = null };
             clienti[2] = new Customer() { Name = "caterina", Telephone = null };
             clienti[3] = new Customer() { Name = "matilda", Telephone = "456" };
 
             //property pattern
-            foreach(var c in clienti)
+            foreach (var c in clienti)
             {
-                if(c is Customer { Telephone: null, Name: string n})
+                if (c is Customer { Telephone: null, Name: string n })
                 {
                     Console.WriteLine($"Il cliente {n} non ha un numero di telefono");
                 }
@@ -77,7 +74,7 @@ namespace IsPatternMatching
             }
 
             var a = new { x = 1, y = 2, z = 3 }; //x=1, y=2, z=3
-            if(a is { x: 1, y: _, z: 3})
+            if (a is { x: 1, y: _, z: 3 })
             {
                 Console.WriteLine(a.ToString());
             }
@@ -90,13 +87,27 @@ namespace IsPatternMatching
 
 
 
-}
 
+
+
+
+
+
+
+    }
+
+    public class Customer
+    {
+        public string Name { get; set; }
+
+        public string Telephone { get; set; }
+
+
+    }
 
     public class MyClass
     {
         private int[] invalidValues = { 1, 4, 7, 9 };
-
 
         public bool IsValid(int value)
         {
@@ -114,6 +125,5 @@ namespace IsPatternMatching
             }
         }
     }
-
 
 }

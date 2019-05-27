@@ -72,6 +72,8 @@ namespace Switch
                     break;
             }
 
+            GenericMatch<int>(1);
+
             Person p = new Person() { FirstName = "Matilda" };
 
 
@@ -214,6 +216,23 @@ namespace Switch
             public string LastName { get; set; }
         }
 
+        //funziona da C# 7.1 
+        static string GenericMatch<T>(T input)
+        {
+            switch (input)
+            {
+                case int i:
+                    return "int";
+                case string s:
+                    return "string";
+                default:
+                    return "altro";
+            }
+
+        }
+
     }
+
+    
 
 }

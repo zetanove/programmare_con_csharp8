@@ -61,6 +61,11 @@ namespace Metodi
             return a + b;
         }
 
+        void StampaValore(int i = default)
+        {
+            Console.WriteLine(i);
+        }
+
         //usato per esempio parametri denominati e posizionali
         static int MioMetodo(int a, int b, int c)
         {
