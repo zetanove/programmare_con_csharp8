@@ -17,11 +17,12 @@
     @foreach (var item in Model.Activities)
     {
         <tr>
-            <td>@item.Title</td>
+            <td><a href="/Todo/EditActivity/@item.Id">@item.Title</a></td>
             <td>@item.Date?.ToShortDateString()</td>
             <td>
                 <input checked="@item.Completed" type="checkbox">
             </td>
+            
         </tr>
     }
 </table>
