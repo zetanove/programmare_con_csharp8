@@ -16,7 +16,6 @@ namespace ToDoWebApp.Business
             list.Add(new TodoActivity("Test 3") { Date = DateTime.Now });
             return list; 
         }
-
        
     }
 }
