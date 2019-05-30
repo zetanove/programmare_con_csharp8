@@ -46,16 +46,9 @@ namespace UWPToDo
             client.Encoding = Encoding.UTF8;
             string json = client.DownloadString(new Uri(apiUrl));
             var data = JsonConvert.DeserializeObject<List<TodoActivity>>(json);
-            dataGrid.ItemsSource = data;
+            var model=new TodoActivityViewModel();
+            model.Activities = data;
+            this.DataContext = model;
         }
-    }
-
-    public class TodoActivity
-    {
-        public Guid Id { get; set; }
-        public string Title { get; set; }
-        public DateTime? Date { get; set; }
-        public string Notes { get; set; }
-        public bool Completed { get; set; }
     }
 }

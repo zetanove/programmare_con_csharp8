@@ -15,8 +15,7 @@
             <RowDefinition></RowDefinition>
             <RowDefinition Height="80"></RowDefinition>
         </Grid.RowDefinitions>
-        <controls:DataGrid x:Name="dataGrid">
-
+        <controls:DataGrid x:Name="dataGrid" ItemsSource="{Binding Activities}">
         </controls:DataGrid>
         <Button x:Name="btCarica" Content="Carica Dati" Margin="10" Grid.Row="1" HorizontalAlignment="Right" Click="BtCarica_Click"/>
 
