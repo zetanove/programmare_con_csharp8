@@ -1,5 +1,5 @@
 ﻿/*
- * Programmare con C# 6 guida completa
+ * Programmare con C# 8 guida completa
  * Autore: Antonio Pelleriti
  * Capitolo 4: operatori aritmetici
  */
@@ -17,6 +17,9 @@ namespace Operatori_Aritmetici
             int somma = a + b; //14
             int diff = a - b; //6
             int molt = a * b; //40
+
+            
+
 
             //divisione fra interi
             int iquoz = a / b; //2 

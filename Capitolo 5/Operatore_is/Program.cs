@@ -9,6 +9,17 @@ namespace Operatore_is
 
         static void Main(string[] args)
         {
+            string str1 = "abc";
+
+            object test1 = "123";
+            var greeting = test1 switch
+            {
+                string s => "ciao",
+                int i => "numero",
+                _ => "altro"
+            };
+
+
             /*TYPE PATTERN*/
             object obj = null;
             if (rand.Next() < 100)
