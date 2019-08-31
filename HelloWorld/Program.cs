@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Runtime.InteropServices;
+using static System.Math;
 
 namespace HelloWorld
 {
@@ -19,6 +20,8 @@ namespace HelloWorld
             Console.WriteLine($"{a[i1]}, {a[i2]}"); // "3, 6"
 
             string s = "";
+
+            Sqrt(123);
 
 
         }
