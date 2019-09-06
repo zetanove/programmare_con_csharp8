@@ -13,8 +13,8 @@ namespace Structs
     {
         static void Main(string[] args)
         {
-            Point pt = new Point();
-            Console.WriteLine("pt: {0}, {1}", pt.X, pt.Y);
+            Point pt=new Point() ;
+            Console.WriteLine("pt: {0}, {1}",pt.X, pt.Y);
 
             Point pt2 = pt;
             Console.WriteLine("pt2: {0}, {1}", pt2.X, pt2.Y);
@@ -22,9 +22,9 @@ namespace Structs
             pt2.Y = 22;
             Console.WriteLine("pt: {0}, {1}", pt.X, pt.Y);
             Console.WriteLine("pt2: {0}, {1}", pt2.X, pt2.Y);
-
-            pt = new Point(1, 1);
-            pt2 = new Point(3, 4);
+            
+            pt=new Point(1,1);
+            pt2=new Point(3,4);
             Point sum = pt.AddToPoint(pt2);
 
             Console.WriteLine("pt: {0}, {1}", pt.X, pt.Y);
