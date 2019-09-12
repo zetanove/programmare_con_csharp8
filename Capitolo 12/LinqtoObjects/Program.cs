@@ -163,13 +163,8 @@ namespace LinqToObjects
             F1Team team = teams.ElementAt(0);
 
             team = teams.First(t => t.TeamName.Contains("a"));
-
             team = teams.Last();
-
             team = teams.SingleOrDefault(t => t.Pilots.Length == 3);
-
-
-
         }
 
         private static void Partition()
@@ -192,9 +187,6 @@ namespace LinqToObjects
             Console.WriteLine("TakeWhile");
             Dump(query);
         }
-
-
-
 
         public static void Dump(IEnumerable query)
         {
@@ -257,8 +249,6 @@ namespace LinqToObjects
             Dump(query3);
         }
 
-
-
         public static void Projection()
         {
             Console.WriteLine("Transform");
@@ -304,7 +294,6 @@ namespace LinqToObjects
             var query6 = teams.SelectMany(team => team.Pilots.Where(pilot => pilot.LastName.Length > 7),
                                             (t, pilot) => pilot.LastName);
             Dump(query6);
-
 
         }
 
@@ -405,9 +394,7 @@ namespace LinqToObjects
                         orderby tp.Points descending
                         select tp.LastName + " " + tp.FirstName + ": " + tp.Points;
 
-
             Dump(query);
-
         }
 
         public static void Grouping()
@@ -446,8 +433,6 @@ namespace LinqToObjects
 
             foreach (var pilot in query2)
                 Console.WriteLine(pilot.Key);
-
-
         }
 
         public static void Join()
@@ -515,8 +500,6 @@ namespace LinqToObjects
                     Console.WriteLine("   {0} {1}", pilot.LastName, pilot.FirstName);
                 }
             }
-
-
         }
 
         public static void SetOperators()
@@ -554,8 +537,6 @@ namespace LinqToObjects
             var zip = array1.Zip(array2, (a, b) => a + b);
             Console.WriteLine("zip");
             DumpSet(zip);
-
-
         }
 
         public static void Quantifier()
