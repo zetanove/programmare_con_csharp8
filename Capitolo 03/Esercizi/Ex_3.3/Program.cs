@@ -1,4 +1,10 @@
-﻿using System;
+﻿/*
+ * Programmare con C# 8 guida completa
+ * Autore: Antonio Pelleriti
+ * Capitolo 3: esercizio 3
+ */
+
+using System;
 
 namespace Ex_3._3
 {
