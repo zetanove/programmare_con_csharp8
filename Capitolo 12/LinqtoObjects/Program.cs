@@ -107,9 +107,9 @@ namespace LinqToObjects
             string first = (from team in teams
                             select team.TeamName).Min();
 
-            string frase = "ti voglio tanto bene";
+            string frase = "ti voglio tanto bene"; //esempio dedicato alla mia amica Francesca
             var acronimo = frase.Split(' ').Aggregate("", (result, word) => result + word.ToUpper().First() + ".");
-            Console.WriteLine(acronimo);
+            Console.WriteLine(acronimo); //stampa TVTB
 
             var queryAggregate = from team in teams
                                  select new { Points = team.Pilots.Aggregate(0, (total, p) => total + p.Points) };
