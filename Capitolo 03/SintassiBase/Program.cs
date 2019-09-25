@@ -38,6 +38,12 @@ namespace SintassiBase
             int i = 123;
             string str = i.ToString(); //restituisce la sequenza di caratteri "123"
             Console.WriteLine(str);
+
+            //variabili implicite
+            var str2 = "hello"; //implicitamente di tipo string
+            var i = 0;
+            Console.WriteLine(str2.Length);
+
         }
     }
 }
