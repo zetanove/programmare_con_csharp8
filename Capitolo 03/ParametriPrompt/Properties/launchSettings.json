@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "ParametriPrompt": {
+      "commandName": "Project",
+      "commandLineArgs": "param1 param2"
+    }
+  }
+}
