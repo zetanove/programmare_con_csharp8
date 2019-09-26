@@ -231,27 +231,37 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Esercizi", "Esercizi", "{E4
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Esercizi", "Esercizi", "{4BD9557F-6DB3-41A0-AC3E-8A41AD5CF551}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UsingNamespace", "Capitolo 03\UsingNamespace\UsingNamespace.csproj", "{1A47FC86-1B04-497B-AF91-044904B480F2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UsingNamespace", "Capitolo 03\UsingNamespace\UsingNamespace.csproj", "{1A47FC86-1B04-497B-AF91-044904B480F2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DirettivePreprocessore", "Capitolo 03\DirettivePreprocessore\DirettivePreprocessore.csproj", "{AA4D2240-1C2D-4B5C-9A63-8F7F565EEC72}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DirettivePreprocessore", "Capitolo 03\DirettivePreprocessore\DirettivePreprocessore.csproj", "{AA4D2240-1C2D-4B5C-9A63-8F7F565EEC72}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EsempiConsole", "Capitolo 03\EsempiConsole\EsempiConsole.csproj", "{0A3DEAA0-5D6A-4F65-BFC7-59F7BBF076AC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EsempiConsole", "Capitolo 03\EsempiConsole\EsempiConsole.csproj", "{0A3DEAA0-5D6A-4F65-BFC7-59F7BBF076AC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParametriPrompt", "Capitolo 03\ParametriPrompt\ParametriPrompt.csproj", "{118EEB71-FD81-48C8-BC31-3F29799948DD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ParametriPrompt", "Capitolo 03\ParametriPrompt\ParametriPrompt.csproj", "{118EEB71-FD81-48C8-BC31-3F29799948DD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex_4.1", "Capitolo 4\Esercizi\Ex_4.1\Ex_4.1.csproj", "{EFBF033C-D625-4B87-859F-28F89DD4C354}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ex_4.1", "Capitolo 4\Esercizi\Ex_4.1\Ex_4.1.csproj", "{EFBF033C-D625-4B87-859F-28F89DD4C354}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex_4.2", "Capitolo 4\Esercizi\Ex_4.2\Ex_4.2.csproj", "{38D33D85-4F8D-4B24-A086-AB343A12B050}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ex_4.2", "Capitolo 4\Esercizi\Ex_4.2\Ex_4.2.csproj", "{38D33D85-4F8D-4B24-A086-AB343A12B050}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex_4.3", "Capitolo 4\Esercizi\Ex_4.3\Ex_4.3.csproj", "{93A4CBA3-829F-478E-A195-DCF9021B3DCD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ex_4.3", "Capitolo 4\Esercizi\Ex_4.3\Ex_4.3.csproj", "{93A4CBA3-829F-478E-A195-DCF9021B3DCD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex_4.4", "Capitolo 4\Esercizi\Ex_4.4\Ex_4.4.csproj", "{441B44CC-AF0F-43AE-821D-A11968830091}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ex_4.4", "Capitolo 4\Esercizi\Ex_4.4\Ex_4.4.csproj", "{441B44CC-AF0F-43AE-821D-A11968830091}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomException", "Capitolo 9\CustomException\CustomException.csproj", "{CB2F83E6-F822-49CB-BCF4-409938BE1448}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CustomException", "Capitolo 9\CustomException\CustomException.csproj", "{CB2F83E6-F822-49CB-BCF4-409938BE1448}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FiltriEccezioni", "Capitolo 9\FiltriEccezioni\FiltriEccezioni.csproj", "{BB0DF369-6825-4C34-B387-FCB6AC9A1DE0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FiltriEccezioni", "Capitolo 9\FiltriEccezioni\FiltriEccezioni.csproj", "{BB0DF369-6825-4C34-B387-FCB6AC9A1DE0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LanciareEccezioni", "Capitolo 9\LanciareEccezioni\LanciareEccezioni.csproj", "{0E470B93-2215-4685-A23A-6CEBF4BFD969}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LanciareEccezioni", "Capitolo 9\LanciareEccezioni\LanciareEccezioni.csproj", "{0E470B93-2215-4685-A23A-6CEBF4BFD969}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Esercizi", "Esercizi", "{C13B9D9D-67DA-44BB-B98B-793DF68DE822}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Esercizi", "Esercizi", "{F160A5C1-17E8-42ED-AA49-347FD0E5D569}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Esercizi", "Esercizi", "{E3366BA7-794C-4EF0-A8C2-AAEBA536255A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Esercizi", "Esercizi", "{F3C26065-3CBD-43FC-A506-3BF7FF295991}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MetodiAnonimiLambda", "Capitolo 11\MetodiAnonimiLambda\MetodiAnonimiLambda.csproj", "{4EA23A27-A8CA-42E3-9073-EE3AD104C97A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -2193,6 +2203,26 @@ Global
 		{0E470B93-2215-4685-A23A-6CEBF4BFD969}.Release|x64.Build.0 = Release|Any CPU
 		{0E470B93-2215-4685-A23A-6CEBF4BFD969}.Release|x86.ActiveCfg = Release|Any CPU
 		{0E470B93-2215-4685-A23A-6CEBF4BFD969}.Release|x86.Build.0 = Release|Any CPU
+		{4EA23A27-A8CA-42E3-9073-EE3AD104C97A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4EA23A27-A8CA-42E3-9073-EE3AD104C97A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4EA23A27-A8CA-42E3-9073-EE3AD104C97A}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{4EA23A27-A8CA-42E3-9073-EE3AD104C97A}.Debug|ARM.Build.0 = Debug|Any CPU
+		{4EA23A27-A8CA-42E3-9073-EE3AD104C97A}.Debug|ARM64.ActiveCfg = Debug|Any CPU
+		{4EA23A27-A8CA-42E3-9073-EE3AD104C97A}.Debug|ARM64.Build.0 = Debug|Any CPU
+		{4EA23A27-A8CA-42E3-9073-EE3AD104C97A}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{4EA23A27-A8CA-42E3-9073-EE3AD104C97A}.Debug|x64.Build.0 = Debug|Any CPU
+		{4EA23A27-A8CA-42E3-9073-EE3AD104C97A}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{4EA23A27-A8CA-42E3-9073-EE3AD104C97A}.Debug|x86.Build.0 = Debug|Any CPU
+		{4EA23A27-A8CA-42E3-9073-EE3AD104C97A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4EA23A27-A8CA-42E3-9073-EE3AD104C97A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4EA23A27-A8CA-42E3-9073-EE3AD104C97A}.Release|ARM.ActiveCfg = Release|Any CPU
+		{4EA23A27-A8CA-42E3-9073-EE3AD104C97A}.Release|ARM.Build.0 = Release|Any CPU
+		{4EA23A27-A8CA-42E3-9073-EE3AD104C97A}.Release|ARM64.ActiveCfg = Release|Any CPU
+		{4EA23A27-A8CA-42E3-9073-EE3AD104C97A}.Release|ARM64.Build.0 = Release|Any CPU
+		{4EA23A27-A8CA-42E3-9073-EE3AD104C97A}.Release|x64.ActiveCfg = Release|Any CPU
+		{4EA23A27-A8CA-42E3-9073-EE3AD104C97A}.Release|x64.Build.0 = Release|Any CPU
+		{4EA23A27-A8CA-42E3-9073-EE3AD104C97A}.Release|x86.ActiveCfg = Release|Any CPU
+		{4EA23A27-A8CA-42E3-9073-EE3AD104C97A}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -2299,6 +2329,11 @@ Global
 		{CB2F83E6-F822-49CB-BCF4-409938BE1448} = {27F0637D-EC80-4E8A-B9DA-DB758FAA77BF}
 		{BB0DF369-6825-4C34-B387-FCB6AC9A1DE0} = {27F0637D-EC80-4E8A-B9DA-DB758FAA77BF}
 		{0E470B93-2215-4685-A23A-6CEBF4BFD969} = {27F0637D-EC80-4E8A-B9DA-DB758FAA77BF}
+		{C13B9D9D-67DA-44BB-B98B-793DF68DE822} = {AB745C91-170B-429B-BE97-11670F929F16}
+		{F160A5C1-17E8-42ED-AA49-347FD0E5D569} = {27F0637D-EC80-4E8A-B9DA-DB758FAA77BF}
+		{E3366BA7-794C-4EF0-A8C2-AAEBA536255A} = {4ACD2782-BE8F-43ED-8A61-BBDC7A009503}
+		{F3C26065-3CBD-43FC-A506-3BF7FF295991} = {BFE0999A-47D1-4A4B-8033-D84DFA140C10}
+		{4EA23A27-A8CA-42E3-9073-EE3AD104C97A} = {DC39D012-E548-444E-A436-F9D2EF339AE4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {132800A9-22C3-4E68-8C0B-523E7FDC6BE7}
