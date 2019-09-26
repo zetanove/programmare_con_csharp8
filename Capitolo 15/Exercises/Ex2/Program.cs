@@ -31,24 +31,6 @@ namespace Ex2
             typeBuilder.CreateType();
             assemblyBuilder2.SetEntryPoint(methodBuilder.GetBaseDefinition(), PEFileKinds.ConsoleApplication);
             assemblyBuilder2.Save(processName + ".EXE", PortableExecutableKinds.Required32Bit, ImageFileMachine.I386);
-
-            return;
-            AssemblyName name = new AssemblyName("Hello");
-            name.Version = new Version("1.0.0.0");
-            AssemblyBuilder assemblyBuilder = AppDomain.CurrentDomain.DefineDynamicAssembly(name, AssemblyBuilderAccess.Save);
-            ModuleBuilder moduleBuilder = assemblyBuilder.DefineDynamicModule("Hello", "Hello.exe");
-            TypeBuilder tb = moduleBuilder.DefineType("HelloWorld.Program",  TypeAttributes.Public);
-            MethodBuilder mainBuilder = tb.DefineMethod("Main", MethodAttributes.Public | MethodAttributes.Static, null, null);
-            //mainBuilder.SetCustomAttribute(CreateAttributeBuilder());
-
-            ILGenerator myMethodIL = mainBuilder.GetILGenerator();
-            myMethodIL.Emit(OpCodes.Ldstr, "Hello World");
-            MethodInfo writeMethod = typeof(Console).GetMethod("WriteLine", new Type[] { typeof(string) });
-            myMethodIL.Emit(OpCodes.Call, writeMethod) ;
-
-            tb.CreateType();
-            assemblyBuilder.SetEntryPoint(mainBuilder.GetBaseDefinition(), PEFileKinds.ConsoleApplication);
-            assemblyBuilder.Save("Hello.EXE", PortableExecutableKinds.Required32Bit, ImageFileMachine.I386);
         }
 
         private static CustomAttributeBuilder CreateAttributeBuilder()
