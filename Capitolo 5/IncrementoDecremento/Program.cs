@@ -1,7 +1,7 @@
 ﻿/*
- * Programmare con C# 6 guida completa
+ * Programmare con C# 8 guida completa
  * Autore: Antonio Pelleriti
- * Capitolo 4: incremento e decremento
+ * Capitolo 5: incremento e decremento
  */
 
 using System;
@@ -26,8 +26,6 @@ namespace Incremento_Decremento
             x = 1;
             y = --x; //decrementa x e poi restituisce il valore
             Console.WriteLine("x={0} ; y={1}", x, y); //stampa x= 0, y=0
-
-            Console.ReadLine();
         }
     }
 }
