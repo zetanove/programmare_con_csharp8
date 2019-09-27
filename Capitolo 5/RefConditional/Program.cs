@@ -1,4 +1,11 @@
-﻿using System;
+﻿/*
+ * Programmare con C# 8 guida completa
+ * Autore: Antonio Pelleriti
+ * Capitolo 4: operatore ref conditional
+ */
+
+
+using System;
 
 namespace RefConditional
 {
