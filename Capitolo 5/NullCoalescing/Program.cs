@@ -1,7 +1,7 @@
 ﻿/*
- * Programmare con C# 6 guida completa
+ * Programmare con C# 8 guida completa
  * Autore: Antonio Pelleriti
- * Capitolo 4: null coalescing
+ * Capitolo 5: null coalescing
  */
 
 using System;
@@ -25,9 +25,7 @@ namespace NullCoalescing
             string str2 = null;
             string name = str1 ?? str2 ?? "senza nome";
             Console.WriteLine(name);
-            Console.ReadLine();
-
-
+            Console.ReadLine();            
         }
     }
 }
