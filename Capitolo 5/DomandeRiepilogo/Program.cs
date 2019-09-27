@@ -1,7 +1,7 @@
 ﻿/*
- * Programmare con C# 6 guida completa
+ * Programmare con C# 8 guida completa
  * Autore: Antonio Pelleriti
- * Capitolo 4: domande riepilogo
+ * Capitolo 5: domande riepilogo
  */
 
 using System;
@@ -14,18 +14,19 @@ namespace DomandeRiepilogo
         {
             //domanda 1
             int a = 5;
-            int b = 2;
+            byte b = 2;
             int c = a / b;
             Console.WriteLine(c);//=2 risposta a
 
             //domanda 2
-            c = a & b;
-            Console.WriteLine(c);//=0 risposta a
+            c = a | b;
+            Console.WriteLine(c);//=7 risposta b
 
             //domanda 3
-            a = 5;
-            a*=2;
-            Console.WriteLine(a);//=10 risposta c
+            bool ba = true;
+            bool bb = false;
+            bool bc = !(a && b);
+            Console.WriteLine(a);//=true risposta b
 
             //domanda 4
             Domanda4();
