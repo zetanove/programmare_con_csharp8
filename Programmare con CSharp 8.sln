@@ -273,33 +273,35 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ex_11.2b", "Capitolo 11\Ese
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Esercizi", "Esercizi", "{E642B540-FDCA-45A9-9841-36409A9A7F47}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncWinforms", "Capitolo 13\AsyncWinforms\AsyncWinforms.csproj", "{D0339108-6255-49DC-A6B0-F911E90ADD6E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AsyncWinforms", "Capitolo 13\AsyncWinforms\AsyncWinforms.csproj", "{D0339108-6255-49DC-A6B0-F911E90ADD6E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AwaitInCatch", "Capitolo 13\AwaitInCatch\AwaitInCatch.csproj", "{95690672-77F9-4C3A-90A6-F946FE3D1D48}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AwaitInCatch", "Capitolo 13\AwaitInCatch\AwaitInCatch.csproj", "{95690672-77F9-4C3A-90A6-F946FE3D1D48}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChildTasks", "Capitolo 13\ChildTasks\ChildTasks.csproj", "{E21C698E-779A-445C-8818-DA5F87928C95}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChildTasks", "Capitolo 13\ChildTasks\ChildTasks.csproj", "{E21C698E-779A-445C-8818-DA5F87928C95}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mutex", "Capitolo 13\Mutex\Mutex.csproj", "{E469BE25-6769-4546-9F11-AA85F82930A2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mutex", "Capitolo 13\Mutex\Mutex.csproj", "{E469BE25-6769-4546-9F11-AA85F82930A2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParallelQuery", "Capitolo 13\ParallelQuery\ParallelQuery.csproj", "{7E9456B8-0B54-48BD-9679-55631965181A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ParallelQuery", "Capitolo 13\ParallelQuery\ParallelQuery.csproj", "{7E9456B8-0B54-48BD-9679-55631965181A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThreadPools", "Capitolo 13\ThreadPools\ThreadPools.csproj", "{B49D3976-8937-43AC-918C-70FA13ADDD91}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ThreadPools", "Capitolo 13\ThreadPools\ThreadPools.csproj", "{B49D3976-8937-43AC-918C-70FA13ADDD91}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinqtoXml", "Capitolo 14\LinqtoXml\LinqtoXml.csproj", "{59711DE4-2F8D-4104-99D3-35CF23F95EB5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LinqtoXml", "Capitolo 14\LinqtoXml\LinqtoXml.csproj", "{59711DE4-2F8D-4104-99D3-35CF23F95EB5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XmlDocuments", "Capitolo 14\XmlDocuments\XmlDocuments.csproj", "{BA16FB09-7DC5-4452-92E1-51C3EF7F1ED1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XmlDocuments", "Capitolo 14\XmlDocuments\XmlDocuments.csproj", "{BA16FB09-7DC5-4452-92E1-51C3EF7F1ED1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XPath", "Capitolo 14\XPath\XPath.csproj", "{B8EF1817-1867-4A24-8CDF-6F9E33008461}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XPath", "Capitolo 14\XPath\XPath.csproj", "{B8EF1817-1867-4A24-8CDF-6F9E33008461}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Esercizi", "Esercizi", "{64827C61-E365-40CD-AC3D-012AB38A1D56}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RssReader", "Capitolo 14\RssReader\RssReader.csproj", "{082B1775-5F13-4107-95BB-9BFBBC671436}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RssReader", "Capitolo 14\RssReader\RssReader.csproj", "{082B1775-5F13-4107-95BB-9BFBBC671436}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CheckedUnchecked", "Capitolo 5\CheckedUnchecked\CheckedUnchecked.csproj", "{33BA90C8-A20A-41D8-95DE-413E1DAFAA84}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CheckedUnchecked", "Capitolo 5\CheckedUnchecked\CheckedUnchecked.csproj", "{33BA90C8-A20A-41D8-95DE-413E1DAFAA84}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IncrementoDecremento", "Capitolo 5\IncrementoDecremento\IncrementoDecremento.csproj", "{9CA46F77-E419-4099-9334-BAC630ED87DE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IncrementoDecremento", "Capitolo 5\IncrementoDecremento\IncrementoDecremento.csproj", "{9CA46F77-E419-4099-9334-BAC630ED87DE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex_5.1", "Capitolo 5\Esercizi\Ex_5.1\Ex_5.1.csproj", "{342EF7F9-1BF5-488C-B502-4CDF06D4CF2D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ex_5.1", "Capitolo 5\Esercizi\Ex_5.1\Ex_5.1.csproj", "{342EF7F9-1BF5-488C-B502-4CDF06D4CF2D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Operatori", "Capitolo 5\Operatori\Operatori.csproj", "{BA0C8E8A-C057-41A8-93D8-283325078B2E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -2581,6 +2583,26 @@ Global
 		{342EF7F9-1BF5-488C-B502-4CDF06D4CF2D}.Release|x64.Build.0 = Release|Any CPU
 		{342EF7F9-1BF5-488C-B502-4CDF06D4CF2D}.Release|x86.ActiveCfg = Release|Any CPU
 		{342EF7F9-1BF5-488C-B502-4CDF06D4CF2D}.Release|x86.Build.0 = Release|Any CPU
+		{BA0C8E8A-C057-41A8-93D8-283325078B2E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA0C8E8A-C057-41A8-93D8-283325078B2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA0C8E8A-C057-41A8-93D8-283325078B2E}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{BA0C8E8A-C057-41A8-93D8-283325078B2E}.Debug|ARM.Build.0 = Debug|Any CPU
+		{BA0C8E8A-C057-41A8-93D8-283325078B2E}.Debug|ARM64.ActiveCfg = Debug|Any CPU
+		{BA0C8E8A-C057-41A8-93D8-283325078B2E}.Debug|ARM64.Build.0 = Debug|Any CPU
+		{BA0C8E8A-C057-41A8-93D8-283325078B2E}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{BA0C8E8A-C057-41A8-93D8-283325078B2E}.Debug|x64.Build.0 = Debug|Any CPU
+		{BA0C8E8A-C057-41A8-93D8-283325078B2E}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{BA0C8E8A-C057-41A8-93D8-283325078B2E}.Debug|x86.Build.0 = Debug|Any CPU
+		{BA0C8E8A-C057-41A8-93D8-283325078B2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA0C8E8A-C057-41A8-93D8-283325078B2E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA0C8E8A-C057-41A8-93D8-283325078B2E}.Release|ARM.ActiveCfg = Release|Any CPU
+		{BA0C8E8A-C057-41A8-93D8-283325078B2E}.Release|ARM.Build.0 = Release|Any CPU
+		{BA0C8E8A-C057-41A8-93D8-283325078B2E}.Release|ARM64.ActiveCfg = Release|Any CPU
+		{BA0C8E8A-C057-41A8-93D8-283325078B2E}.Release|ARM64.Build.0 = Release|Any CPU
+		{BA0C8E8A-C057-41A8-93D8-283325078B2E}.Release|x64.ActiveCfg = Release|Any CPU
+		{BA0C8E8A-C057-41A8-93D8-283325078B2E}.Release|x64.Build.0 = Release|Any CPU
+		{BA0C8E8A-C057-41A8-93D8-283325078B2E}.Release|x86.ActiveCfg = Release|Any CPU
+		{BA0C8E8A-C057-41A8-93D8-283325078B2E}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -2711,6 +2733,7 @@ Global
 		{33BA90C8-A20A-41D8-95DE-413E1DAFAA84} = {8FC05C3D-2F6D-4257-8A7C-BB5F4ADDAAEB}
 		{9CA46F77-E419-4099-9334-BAC630ED87DE} = {8FC05C3D-2F6D-4257-8A7C-BB5F4ADDAAEB}
 		{342EF7F9-1BF5-488C-B502-4CDF06D4CF2D} = {E4ABD752-C400-4EC7-B840-8BE8AD0D4888}
+		{BA0C8E8A-C057-41A8-93D8-283325078B2E} = {8FC05C3D-2F6D-4257-8A7C-BB5F4ADDAAEB}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {132800A9-22C3-4E68-8C0B-523E7FDC6BE7}

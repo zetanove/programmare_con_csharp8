@@ -1,5 +1,5 @@
 ﻿/*
- * Programmare con C# 6 guida completa
+ * Programmare con C# 8 guida completa
  * Autore: Antonio Pelleriti
  * Capitolo 4: operatori
  */
@@ -13,15 +13,28 @@ namespace Operatori
     {
         static void Main(string[] args)
         {
-            int somma = 1 + 2 * 3; //precedenza dell'operatore *   =>   1+(2*3)
-            Console.WriteLine(somma);
+            int espressione = 1 + 2 * 3; //precedenza dell'operatore *   =>   1+(2*3)
+            Console.WriteLine(espressione);
+
+            //divisione fra interi
+            int a = 5;
+            int b = 2;
+            int quoz = a / b; //risultato 2
+            Console.WriteLine($"a/b= {quoz}");
+
+            int mod = a % b; //risultato 2
+            Console.WriteLine($"resto di a/b= {mod}");
 
             int i = 4;
             double d = 2.0d;
-
             Type type = (i / d).GetType();
             Console.WriteLine(type.FullName);
 
+            //concatenazione stringhe
+            string str1 = "hello";
+            string str2 = "world";
+            string concat = str1 + str2;
+            Console.WriteLine(concat); //helloworld
 
             //bitwise
             bool t = true;
@@ -50,17 +63,17 @@ namespace Operatori
             byte x = 5;             // 0000 0101
             byte y = 9;             // 0000 1001
             byte z = (byte)(x & y); // 0000 0001
-            Console.WriteLine("AND="+z); // =1
+            Console.WriteLine("AND=" + z); // =1
 
             z = (byte)(x | y); 		// 0000 1101
-            Console.WriteLine("OR="+z); 	// = 13
+            Console.WriteLine("OR=" + z); 	// = 13
 
 
             z = (byte)(x ^ y); 		// 0000 1100
-            Console.WriteLine("XOR="+z); 	// = 12
+            Console.WriteLine("XOR=" + z); 	// = 12
 
             byte notx = (byte)~x;	// 1111 1010
-            Console.WriteLine("NOT="+notx); // = 250
+            Console.WriteLine("NOT=" + notx); // = 250
 
             i = 8;                  // 0000 1000
             int shifted = i >> 3;   // 0000 0001
@@ -68,8 +81,8 @@ namespace Operatori
 
             sbyte sb = -123;
             Console.WriteLine("{0} = {1}", sb, Convert.ToString(sb, 2));
-            Console.WriteLine("{0} = {1}", sb<<3, Convert.ToString((sbyte)(sb<<3), 2));
-            
+            Console.WriteLine("{0} = {1}", sb << 3, Convert.ToString((sbyte)(sb << 3), 2));
+
 
             //shift
             Console.WriteLine("shift operators");
