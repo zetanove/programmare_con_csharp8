@@ -17,13 +17,18 @@ namespace Operatori_Aritmetici
             int somma = a + b; //14
             int diff = a - b; //6
             int molt = a * b; //40
+            Console.WriteLine($"a={a} b={b}");
 
-            
-
+            Console.WriteLine($"somma={somma}");
+            Console.WriteLine($"diff={diff}");
+            Console.WriteLine($"molt={molt}");
 
             //divisione fra interi
             int iquoz = a / b; //2 
+            Console.WriteLine($"divisione intera={iquoz}");
+            Console.WriteLine($"resto={a%b}");
             double dquoz = (double)a / b; //2.5
+            Console.WriteLine($"divisione con virgola={iquoz}");
 
             int num = 10;
             double quoz = num / 2.0d; //5

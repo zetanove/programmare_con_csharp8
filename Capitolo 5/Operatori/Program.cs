@@ -14,16 +14,7 @@ namespace Operatori
         static void Main(string[] args)
         {
             int espressione = 1 + 2 * 3; //precedenza dell'operatore *   =>   1+(2*3)
-            Console.WriteLine(espressione);
-
-            //divisione fra interi
-            int a = 5;
-            int b = 2;
-            int quoz = a / b; //risultato 2
-            Console.WriteLine($"a/b= {quoz}");
-
-            int mod = a % b; //risultato 2
-            Console.WriteLine($"resto di a/b= {mod}");
+            Console.WriteLine(espressione);            
 
             int i = 4;
             double d = 2.0d;
