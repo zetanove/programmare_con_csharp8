@@ -1,7 +1,7 @@
 ﻿/*
- * Programmare con C# 6 guida completa
+ * Programmare con C# 8 guida completa
  * Autore: Antonio Pelleriti
- * Capitolo 4: nameof
+ * Capitolo 5: nameof
  */
 using System;
 
