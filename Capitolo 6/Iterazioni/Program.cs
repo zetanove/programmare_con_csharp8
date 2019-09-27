@@ -1,4 +1,10 @@
-﻿using System;
+﻿/*
+ * Programmare con C# 8 guida completa
+ * Autore: Antonio Pelleriti
+ * Capitolo 6: istruzioni di iterazione
+ */
+
+using System;
 using System.Collections.Generic;
 
 namespace Iterazioni
