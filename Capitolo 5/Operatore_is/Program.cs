@@ -1,7 +1,10 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace Operatore_is
+namespace IsPatternMatching
 {
     class Program
     {
@@ -9,17 +12,6 @@ namespace Operatore_is
 
         static void Main(string[] args)
         {
-            string str1 = "abc";
-
-            object test1 = "123";
-            var greeting = test1 switch
-            {
-                string s => "ciao",
-                int i => "numero",
-                _ => "altro"
-            };
-
-
             /*TYPE PATTERN*/
             object obj = null;
             if (rand.Next() < 100)
@@ -43,8 +35,8 @@ namespace Operatore_is
             DayOfWeek giorno = DateTime.Today.DayOfWeek;
             bool festive = giorno is DayOfWeek.Sunday; //true se oggi è domenica
 
-
             //var pattern
+
             MyClass mc = new MyClass();
             test = mc.IsValid(2);
 
@@ -62,10 +54,10 @@ namespace Operatore_is
             else Console.WriteLine(0);
 
             Customer[] clienti = new Customer[5];
-            clienti[0] = new Customer() { Name = "antonio", Telephone = null };
+            clienti[0] = new Customer() { Name = "Antonio", Telephone = null };
             clienti[1] = new Customer() { Name = null, Telephone = null };
-            clienti[2] = new Customer() { Name = "caterina", Telephone = null };
-            clienti[3] = new Customer() { Name = "matilda", Telephone = "456" };
+            clienti[2] = new Customer() { Name = "Caterina", Telephone = null };
+            clienti[3] = new Customer() { Name = "Matilda", Telephone = "456" };
 
             //property pattern
             foreach (var c in clienti)
@@ -94,46 +86,6 @@ namespace Operatore_is
             //(int x, int y) = pt;
 
             Console.ReadLine();
-        }
-
-
-
-
-
-
-
-
-
-
-    }
-
-    public class Customer
-    {
-        public string Name { get; set; }
-
-        public string Telephone { get; set; }
-
-
-    }
-
-    public class MyClass
-    {
-        private int[] invalidValues = { 1, 4, 7, 9 };
-
-        public bool IsValid(int value)
-        {
-            switch (value)
-            {
-                case var validValue when (!invalidValues.Contains(value)):
-                    return true;
-
-                case var invalidValue when (invalidValues.Contains(value)):
-                    return false;
-
-                default:
-                    return false;
-
-            }
         }
     }
 

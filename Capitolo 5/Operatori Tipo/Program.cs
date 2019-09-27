@@ -1,7 +1,7 @@
 ﻿/*
- * Programmare con C# 6 guida completa
+ * Programmare con C# 8 guida completa
  * Autore: Antonio Pelleriti
- * Capitolo 4: operatori di tipo
+ * Capitolo 5: operatori di tipo
  */
 using System;
 using System.Collections.Generic;
