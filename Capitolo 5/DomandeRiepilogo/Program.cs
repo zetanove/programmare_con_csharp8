@@ -28,10 +28,8 @@ namespace DomandeRiepilogo
             bool bc = !(ba && bb);
             Console.WriteLine(bc);//=true risposta b
 
-            //domanda 4
-            Domanda4();
 
-            //domanda 5
+            //domanda 4
             byte max = Byte.MaxValue;
             try
             {
@@ -42,29 +40,29 @@ namespace DomandeRiepilogo
             }
             catch
             {
-                Console.WriteLine("risposta c, si verifica un'eccezione");
+                Console.WriteLine("risposta d, si verifica un'eccezione");
             }
 
-            //domanda 6
+            //domanda 5
             if(A() && B())
             {
             }
             Console.WriteLine("risposta d, entrambi");
 
-            //domanda 7
+            //domanda 6
             string str = "abc";
             int? len = str?.Length ?? 0;
             Console.WriteLine(len); //= 3 risposta c
 
-            //domanda 8
-            string n = nameof(Main); 
-            Console.WriteLine(n); // risposta a, nameof introdotto con C# 6
+            //domanda 7
+            char ch = str.Length > 3 ? str[^1] : str[0];
+            Console.WriteLine(ch); //= a risposta a
 
-            //domanda 9m pattern matching con is
+            //domanda 8 pattern matching con is
             object obj = "Hello world";
             if (obj is string s && s.Length > 5)
                 Console.WriteLine(s.Length);
-            else Console.WriteLine(0);
+            else Console.WriteLine(0); //=11 risposta c
 
             Console.ReadLine();
 
