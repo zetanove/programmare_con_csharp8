@@ -25,8 +25,8 @@ namespace DomandeRiepilogo
             //domanda 3
             bool ba = true;
             bool bb = false;
-            bool bc = !(a && b);
-            Console.WriteLine(a);//=true risposta b
+            bool bc = !(ba && bb);
+            Console.WriteLine(bc);//=true risposta b
 
             //domanda 4
             Domanda4();
@@ -37,7 +37,7 @@ namespace DomandeRiepilogo
             {
                 checked
                 {
-                    byte bb = (byte)(max + 1);
+                    byte by = (byte)(max + 1);
                 }
             }
             catch
