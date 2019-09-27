@@ -31,6 +31,7 @@ namespace Operatori
             bool t = true;
             bool f = false;
 
+            Console.WriteLine("operatori bitwise");
             Console.WriteLine("operatore AND (&)");
             Console.WriteLine("{0} & {1} = {2}", f, f, f & f);
             Console.WriteLine("{0} & {1} = {2}", f, t, f & t);
@@ -76,7 +77,7 @@ namespace Operatori
 
 
             //shift
-            Console.WriteLine("shift operators");
+            Console.WriteLine("operatori shift");
             int gb = 1;
             int mb = gb << 10;
             Console.WriteLine("{0} gb = {1} mb", gb, mb);
