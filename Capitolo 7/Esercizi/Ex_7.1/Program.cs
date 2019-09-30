@@ -1,4 +1,13 @@
-﻿using System;
+﻿/*
+ * Programmare con C# 8 guida completa
+ * Autore: Antonio Pelleriti
+ * Capitolo 7:
+ * Esercizio 1) Scrivere un’applicazione Console che richieda all’utente l’inserimento di un
+ * numero n e stampi il fattoriale di n.
+ */
+
+
+using System;
 
 namespace Ex_7._1
 {
