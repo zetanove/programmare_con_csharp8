@@ -1,4 +1,11 @@
-﻿using System;
+﻿/*
+ * Programmare con C# 8 guida completa
+ * Autore: Antonio Pelleriti
+ * Capitolo 13:
+ * Esercizio 3
+ */
+
+using System;
 using System.Reflection;
 using System.Threading;
 

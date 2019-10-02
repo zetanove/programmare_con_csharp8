@@ -2,9 +2,11 @@
  * Programmare con C# 8 guida completa
  * Autore: Antonio Pelleriti
  * Capitolo 13:
- * Esercizio 2)
+ * Esercizio 2) Scrivere un’applicazione Console con un metodo asincrono che stampi a 
+ * intervalli di un secondo i numeri da 10 a 1 utilizzando l’istruzione yield.
  */
- using System;
+
+using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
