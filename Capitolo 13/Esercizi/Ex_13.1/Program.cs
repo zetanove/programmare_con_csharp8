@@ -16,6 +16,8 @@ namespace Ex_13._1
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Premi x per uscire");
+
             bool exit = false;
 
             Thread th1 = new Thread(() =>
@@ -55,6 +57,13 @@ namespace Ex_13._1
             th2.Start();
             th3.Start();
 
+            while(!exit)
+            {
+                if(Console.ReadKey().Key== ConsoleKey.X)
+                {
+                    exit = true;
+                }
+            }
 
         }
     }
