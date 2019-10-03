@@ -41,7 +41,7 @@ namespace SintassiBase
 
             //variabili implicite
             var str2 = "hello"; //implicitamente di tipo string
-            var i = 0;
+            var ij = 0;
             Console.WriteLine(str2.Length);
 
         }
