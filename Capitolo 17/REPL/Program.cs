@@ -11,7 +11,7 @@ namespace REPL
     {
         async static Task Main(string[] args)
         {
-            var  options = new CSharpParseOptions(LanguageVersion.CSharp8,
+            var options = new CSharpParseOptions(LanguageVersion.CSharp8,
                 DocumentationMode.Parse, SourceCodeKind.Script, null);
 
             Script<object> script = CSharpScript.Create(string.Empty);
@@ -44,24 +44,23 @@ namespace REPL
 
                 if (result != null && result.ReturnValue != null)
                     Console.WriteLine(result.ReturnValue);
-            }
 
+                static void WriteError(string error)
+                {
+                    var color = Console.ForegroundColor;
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.WriteLine(error);
+                    Console.ForegroundColor = color;
+                }
 
-            static void WriteError(string error)
-            {
-                var color = Console.ForegroundColor;
-                Console.ForegroundColor = ConsoleColor.Red;
-                Console.WriteLine(error);
-                Console.ForegroundColor = color;
-            }
-
-            static bool IsCompleteSubmission(string code)
-            {
-                var syntaxTree = SyntaxFactory.ParseSyntaxTree(code, options: options);
-                return SyntaxFactory.IsCompleteSubmission(syntaxTree);
-            }
-
-
+                bool IsCompleteSubmission(string code)
+                {
+                    var syntaxTree = SyntaxFactory.ParseSyntaxTree(code, options: options);
+                    return SyntaxFactory.IsCompleteSubmission(syntaxTree);
+                }
+            }  
         }
+
+        
     }
 }
