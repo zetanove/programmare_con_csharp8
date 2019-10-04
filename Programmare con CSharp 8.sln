@@ -375,6 +375,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Esercizi", "Esercizi", "{1595EA86-9536-4EFD-AC50-482EAEA34D9A}"
 	ProjectSection(SolutionItems) = preProject
 		Capitolo 17\Esercizi\Ex_17.1.txt = Capitolo 17\Esercizi\Ex_17.1.txt
+		Capitolo 17\Esercizi\Ex_17.2.txt = Capitolo 17\Esercizi\Ex_17.2.txt
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex_16.1", "Capitolo 16\Esercizi\Ex_16.1\Ex_16.1.csproj", "{5962B7B2-4BCD-42C2-A511-FA86334AD9B4}"
