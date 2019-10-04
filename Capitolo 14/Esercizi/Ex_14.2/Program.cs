@@ -1,4 +1,12 @@
-﻿using System;
+﻿/*
+ * Programmare con C# 8 guida completa
+ * Autore: Antonio Pelleriti
+ * Capitolo 14: 
+ * Esercizio 2)
+ */
+
+
+using System;
 using System.Xml;
 using System.Xml.XPath;
 

@@ -1,4 +1,11 @@
-﻿using System;
+﻿/*
+ * Programmare con C# 8 guida completa
+ * Autore: Antonio Pelleriti
+ * Capitolo 14: 
+ * Esercizio 3)
+ */
+
+using System;
 using System.Xml.Linq;
 
 namespace Ex_14._3
