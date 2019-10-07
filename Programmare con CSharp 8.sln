@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.28531.58
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelloCsharp8", "HelloWorld\HelloCsharp8.csproj", "{DAFAB6DC-A156-44E2-84F7-DADCD0FAC0B0}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Capitolo 04", "Capitolo 04", "{6079DD12-E2B7-4727-B5F6-A50420B55E74}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Capitolo 05", "Capitolo 05", "{8FC05C3D-2F6D-4257-8A7C-BB5F4ADDAAEB}"
@@ -409,26 +407,6 @@ Global
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{DAFAB6DC-A156-44E2-84F7-DADCD0FAC0B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DAFAB6DC-A156-44E2-84F7-DADCD0FAC0B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DAFAB6DC-A156-44E2-84F7-DADCD0FAC0B0}.Debug|ARM.ActiveCfg = Debug|Any CPU
-		{DAFAB6DC-A156-44E2-84F7-DADCD0FAC0B0}.Debug|ARM.Build.0 = Debug|Any CPU
-		{DAFAB6DC-A156-44E2-84F7-DADCD0FAC0B0}.Debug|ARM64.ActiveCfg = Debug|Any CPU
-		{DAFAB6DC-A156-44E2-84F7-DADCD0FAC0B0}.Debug|ARM64.Build.0 = Debug|Any CPU
-		{DAFAB6DC-A156-44E2-84F7-DADCD0FAC0B0}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{DAFAB6DC-A156-44E2-84F7-DADCD0FAC0B0}.Debug|x64.Build.0 = Debug|Any CPU
-		{DAFAB6DC-A156-44E2-84F7-DADCD0FAC0B0}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{DAFAB6DC-A156-44E2-84F7-DADCD0FAC0B0}.Debug|x86.Build.0 = Debug|Any CPU
-		{DAFAB6DC-A156-44E2-84F7-DADCD0FAC0B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DAFAB6DC-A156-44E2-84F7-DADCD0FAC0B0}.Release|Any CPU.Build.0 = Release|Any CPU
-		{DAFAB6DC-A156-44E2-84F7-DADCD0FAC0B0}.Release|ARM.ActiveCfg = Release|Any CPU
-		{DAFAB6DC-A156-44E2-84F7-DADCD0FAC0B0}.Release|ARM.Build.0 = Release|Any CPU
-		{DAFAB6DC-A156-44E2-84F7-DADCD0FAC0B0}.Release|ARM64.ActiveCfg = Release|Any CPU
-		{DAFAB6DC-A156-44E2-84F7-DADCD0FAC0B0}.Release|ARM64.Build.0 = Release|Any CPU
-		{DAFAB6DC-A156-44E2-84F7-DADCD0FAC0B0}.Release|x64.ActiveCfg = Release|Any CPU
-		{DAFAB6DC-A156-44E2-84F7-DADCD0FAC0B0}.Release|x64.Build.0 = Release|Any CPU
-		{DAFAB6DC-A156-44E2-84F7-DADCD0FAC0B0}.Release|x86.ActiveCfg = Release|Any CPU
-		{DAFAB6DC-A156-44E2-84F7-DADCD0FAC0B0}.Release|x86.Build.0 = Release|Any CPU
 		{7A66EABC-E486-45B9-B33F-0829CF585A27}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{7A66EABC-E486-45B9-B33F-0829CF585A27}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7A66EABC-E486-45B9-B33F-0829CF585A27}.Debug|ARM.ActiveCfg = Debug|Any CPU
