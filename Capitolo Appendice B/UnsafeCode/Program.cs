@@ -1,4 +1,9 @@
-﻿using System;
+﻿/*
+ * Programmare con C# 8 guida completa
+ * Autore: Antonio Pelleriti * 
+ * Appendice B: Unsafe Code
+ */
+using System;
 using System.Runtime.InteropServices;
 
 namespace UnsafeCode
