@@ -388,6 +388,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TryCatch", "Capitolo 09\Try
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Using", "Capitolo 09\Using\Using.csproj", "{699606EF-522F-47AC-8D8A-8C3F01CA1CA1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stringhe", "Capitolo Appendice A\Stringhe\Stringhe.csproj", "{9A26C288-D87C-484A-8EE2-430C93F91D23}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docs", "Docs", "{605A346C-5DB6-4F7C-BE2A-AE799DBDBEDA}"
+	ProjectSection(SolutionItems) = preProject
+		docs\Errata Corrige Programmare con C#8.pdf = docs\Errata Corrige Programmare con C#8.pdf
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -3428,6 +3435,26 @@ Global
 		{699606EF-522F-47AC-8D8A-8C3F01CA1CA1}.Release|x64.Build.0 = Release|Any CPU
 		{699606EF-522F-47AC-8D8A-8C3F01CA1CA1}.Release|x86.ActiveCfg = Release|Any CPU
 		{699606EF-522F-47AC-8D8A-8C3F01CA1CA1}.Release|x86.Build.0 = Release|Any CPU
+		{9A26C288-D87C-484A-8EE2-430C93F91D23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A26C288-D87C-484A-8EE2-430C93F91D23}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A26C288-D87C-484A-8EE2-430C93F91D23}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{9A26C288-D87C-484A-8EE2-430C93F91D23}.Debug|ARM.Build.0 = Debug|Any CPU
+		{9A26C288-D87C-484A-8EE2-430C93F91D23}.Debug|ARM64.ActiveCfg = Debug|Any CPU
+		{9A26C288-D87C-484A-8EE2-430C93F91D23}.Debug|ARM64.Build.0 = Debug|Any CPU
+		{9A26C288-D87C-484A-8EE2-430C93F91D23}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{9A26C288-D87C-484A-8EE2-430C93F91D23}.Debug|x64.Build.0 = Debug|Any CPU
+		{9A26C288-D87C-484A-8EE2-430C93F91D23}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{9A26C288-D87C-484A-8EE2-430C93F91D23}.Debug|x86.Build.0 = Debug|Any CPU
+		{9A26C288-D87C-484A-8EE2-430C93F91D23}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A26C288-D87C-484A-8EE2-430C93F91D23}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A26C288-D87C-484A-8EE2-430C93F91D23}.Release|ARM.ActiveCfg = Release|Any CPU
+		{9A26C288-D87C-484A-8EE2-430C93F91D23}.Release|ARM.Build.0 = Release|Any CPU
+		{9A26C288-D87C-484A-8EE2-430C93F91D23}.Release|ARM64.ActiveCfg = Release|Any CPU
+		{9A26C288-D87C-484A-8EE2-430C93F91D23}.Release|ARM64.Build.0 = Release|Any CPU
+		{9A26C288-D87C-484A-8EE2-430C93F91D23}.Release|x64.ActiveCfg = Release|Any CPU
+		{9A26C288-D87C-484A-8EE2-430C93F91D23}.Release|x64.Build.0 = Release|Any CPU
+		{9A26C288-D87C-484A-8EE2-430C93F91D23}.Release|x86.ActiveCfg = Release|Any CPU
+		{9A26C288-D87C-484A-8EE2-430C93F91D23}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -3598,6 +3625,7 @@ Global
 		{5A3094DE-472A-46DD-A6C0-095DA18C86E3} = {27F0637D-EC80-4E8A-B9DA-DB758FAA77BF}
 		{EE79537E-6259-4347-A554-ABED332AD687} = {27F0637D-EC80-4E8A-B9DA-DB758FAA77BF}
 		{699606EF-522F-47AC-8D8A-8C3F01CA1CA1} = {27F0637D-EC80-4E8A-B9DA-DB758FAA77BF}
+		{9A26C288-D87C-484A-8EE2-430C93F91D23} = {AD6AB9C6-DE33-4DF5-AD54-CE874C1935E8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {132800A9-22C3-4E68-8C0B-523E7FDC6BE7}

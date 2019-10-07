@@ -260,3 +260,4 @@ paket-files/
 __pycache__/
 *.pyc
 /Capitolo 18/TODO App/VS/ToDoWebApp/ToDoWebApp/Properties/PublishProfiles/CustomProfile.pubxml
+/docs/Errata Corrige Programmare con C#8.docx
