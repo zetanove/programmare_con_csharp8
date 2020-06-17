@@ -42,7 +42,7 @@ namespace TipiPrimitivi
             double d = 0.1D;
             Console.WriteLine($"double  f  = " + d);
 
-            //precisione
+            //precisione float
             var risultato = 0.1F * 9999999;
             Console.WriteLine(risultato); //non stampa 999999.9 ma...
 
