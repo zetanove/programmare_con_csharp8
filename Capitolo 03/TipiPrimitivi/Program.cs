@@ -42,6 +42,10 @@ namespace TipiPrimitivi
             double d = 0.1D;
             Console.WriteLine($"double  f  = " + d);
 
+            //precisione
+            var risultato = 0.1F * 9999999;
+            Console.WriteLine(risultato); //non stampa 999999.9 ma...
+
             //Tipo decimal
             decimal dec = 0.1M;
             Console.WriteLine($"decimal dec = " + dec);
