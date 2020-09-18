@@ -14,6 +14,9 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Capitolo 09", "Capitolo 09", "{27F0637D-EC80-4E8A-B9DA-DB758FAA77BF}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Capitolo 10", "Capitolo 10", "{AB745C91-170B-429B-BE97-11670F929F16}"
+	ProjectSection(SolutionItems) = preProject
+		Class1.cs = Class1.cs
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TupleLiteral", "Capitolo 10\TupleLiteral\TupleLiteral.csproj", "{7A66EABC-E486-45B9-B33F-0829CF585A27}"
 EndProject
@@ -386,18 +389,18 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TryCatch", "Capitolo 09\Try
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Using", "Capitolo 09\Using\Using.csproj", "{699606EF-522F-47AC-8D8A-8C3F01CA1CA1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stringhe", "Capitolo Appendice A\Stringhe\Stringhe.csproj", "{9A26C288-D87C-484A-8EE2-430C93F91D23}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Stringhe", "Capitolo Appendice A\Stringhe\Stringhe.csproj", "{9A26C288-D87C-484A-8EE2-430C93F91D23}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docs", "Docs", "{605A346C-5DB6-4F7C-BE2A-AE799DBDBEDA}"
 	ProjectSection(SolutionItems) = preProject
 		docs\Errata Corrige Programmare con C#8.pdf = docs\Errata Corrige Programmare con C#8.pdf
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "String Builder", "Capitolo Appendice A\StringBuilder\String Builder.csproj", "{05329914-9DD7-4E5B-9524-F258C33DA254}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "String Builder", "Capitolo Appendice A\StringBuilder\String Builder.csproj", "{05329914-9DD7-4E5B-9524-F258C33DA254}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EspressioniRegolari", "Capitolo Appendice A\EspressioniRegolari\EspressioniRegolari.csproj", "{34ECE4D9-0804-4DC4-9268-FDF0670F9E6A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EspressioniRegolari", "Capitolo Appendice A\EspressioniRegolari\EspressioniRegolari.csproj", "{34ECE4D9-0804-4DC4-9268-FDF0670F9E6A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlatformInvoke", "Capitolo Appendice B\PlatformInvoke\PlatformInvoke.csproj", "{E69974B7-E1EE-4599-9CFF-61A8FFDA544F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PlatformInvoke", "Capitolo Appendice B\PlatformInvoke\PlatformInvoke.csproj", "{E69974B7-E1EE-4599-9CFF-61A8FFDA544F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
