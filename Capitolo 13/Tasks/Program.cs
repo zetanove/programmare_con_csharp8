@@ -40,12 +40,16 @@ namespace Tasks
 
             Task longTask2 = Task.Factory.StartNew(() =>
                 {
+                    Console.WriteLine("start long task");
                     for (int i = 0; i < 100; i++)
                     {
+                        Console.WriteLine("long task: "+i);
                         Thread.Sleep(100);
                     }
+                    Console.WriteLine("end long task");
                 },
                 TaskCreationOptions.LongRunning);
+      
 
             List<Task> tasks = new List<Task>();
             for (int i = 1; i <= 5; i++)
